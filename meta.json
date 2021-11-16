@@ -1,0 +1,25 @@
+{
+    "courseId": "Earth Cube Workshops",
+    "title": "Earth Cube Workshops",
+    "slogan": "An easy approach to DS tools",
+    "description": "Workshops for EC Organization",
+    "bio": "I am Socorro and I am here to help you",
+    "siteUrl": "https://to_be_provided_by_EC.com",
+    "twitter": "@EarthCube",
+    "fonts": "IBM+Plex+Mono:500|IBM+Plex+Sans:700|Lato:400,400i,700,700i",
+    "testTemplate": "from wasabi import Printer\n__msg__ = Printer()\n__solution__ = \"\"\"${solution}\"\"\"\n\n${solution}\n\n${test}\n\ntry:\n    test()\nexcept AssertionError as e:\n    __msg__.fail(e)",
+    "juniper": {
+        "repo": "ines/course-starter-python",
+        "branch": "binder",
+        "lang": "python",
+        "kernelType": "python3",
+        "debug": false
+    },
+    "showProfileImage": true,
+    "footerLinks": [
+        { "text": "Website", "url": "https://www.earthcube.org/" },
+        { "text": "Source", "url": "https://github.com/ines/course-starter-python" },
+        { "text": "Built with ♥", "url": "https://github.com/ines/course-starter-python" }
+    ],
+    "theme": "#de7878"
+}
