@@ -1,12 +1,12 @@
 ---
-title: 'Chapter 5: Working with RMarkdown'
+title: 'Module 3: Intro to GitHub'
 description:
-  'This chapter will teach you about many cool things and introduce you to the
+  'This module will teach you about many cool things and introduce you to the
   most important concepts of the course.'
-prev: /chapter4
-next: /chapter6
+prev: /module2
+next: /module4
 type: chapter
-id: 5
+id: 3
 ---
 <exercise id="1" title="Introduction" type="slides">
 

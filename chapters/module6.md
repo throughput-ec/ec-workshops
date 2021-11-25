@@ -1,10 +1,10 @@
 ---
-title: 'Chapter 6: Introduction to Docker'
+title: 'Module 6: Introduction to Docker'
 description:
-  'This chapter will teach you about many cool things and introduce you to the
+  'This module will teach you about many cool things and introduce you to the
   most important concepts of the course.'
-prev: /chapter5
-next: /chapter7
+prev: /module5
+next: /module7
 type: chapter
 id: 6
 ---

@@ -1,10 +1,10 @@
 ---
-title: 'Chapter 4: Introduction to Binder'
+title: 'Module 4: Introduction to Binder'
 description:
-  'This chapter will teach you about many cool things and introduce you to the
+  'This module will teach you about many cool things and introduce you to the
   most important concepts of the course.'
-prev: /chapter3
-next: /chapter5
+prev: /module3
+next: /module5
 type: chapter
 id: 4
 ---

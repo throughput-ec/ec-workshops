@@ -1,7 +1,7 @@
 ---
-title: 'Chapter 2: Setting up your working environment with conda'
+title: 'Module 2: Setting up your working environment with conda'
 description:
-  'This chapter will teach you even more stuff and help you learn some new
+  'This module will teach you even more stuff and help you learn some new
   concepts.'
 prev: /module1
 next: /module3
