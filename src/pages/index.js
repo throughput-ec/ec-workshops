@@ -17,16 +17,30 @@ export default ({ data }) => {
     return (
         <Layout isHome>
             <Logo className={classes.logo} aria-label={siteMetadata.title} />
-
             <section>
-                <h1 className={classes.subtitle}> Earth Cube Workshops </h1>
+
+                <h1 className={classes.subtitle}><center>An EarthCube Interactive Course</center></h1>
                 <div className={classes.introduction}>
+                <p></p>
+
+                <center>
+                <p>Welcome to EarthCube Interactive Workshops! </p>
                 <p>
-                    In the different modules, we will learn different DS tools that wll help our research be reproducible.
+                    These short courses will teach you how to conduct reproducible 
+                    research using Data Sciences tools.  
+
+                    You will be working with R Markdown, Docker containerization,
+                    and Git for version control.  
                 </p>
+                <p>
+                    After this course, you will be able to process your own research
+                    in a format suitable for analysis, writing your own analysis functions,
+                    and deriving data-driven insights via R Markdown files.
+                </p>
+                </center>
                 </div>
+  
             </section>
-            
             {chapters.map(({ slug, title, description }) => (
                 <section key={slug} className={classes.chapter}>
                     <h2 className={classes.chapterTitle}>

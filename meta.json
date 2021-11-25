@@ -1,25 +1,25 @@
 {
-    "courseId": "Earth Cube Workshops",
-    "title": "Earth Cube Workshops",
-    "slogan": "An easy approach to DS tools",
-    "description": "Workshops for EC Organization",
-    "bio": "I am Socorro and I am here to help you",
-    "siteUrl": "https://to_be_provided_by_EC.com",
-    "twitter": "@EarthCube",
+    "courseId": "ec-workshops",
+    "title": "EC Workshops",
+    "slogan": "An Earth Cube Interactive Course",
+    "description": "<p>This is a free, open source course on how to use different Data Science Tools such as Jupyter Notebooks, Docker, and others. It's made possible by a long and fruitful collaboration in teaching this material with <a href=' '>Project Pythia</a>, <a href=' '>NSF Funding</a>, <a href=''>Earth Cube</a>. The framework used was originally creted by by <a href='https://ines.io/'>Ines Montani</a> who designed the web framework, and by <a href=''>Socorro Dominguez</a> and <a href=''>Simon Goring</a> who helped build the site.</p><p>Contributions and comments on how to improve the course are welcome! Please <a href=''>file an issue</a>.</p>",
+    "bio": "<p>For nearly a decade, the EarthCube community has been transforming the conduct of geosciences research by developing and maintaining a well-connected and facile environment that improves access, sharing, visualization, and analysis of data and related resources. While sharable tools, methods, and cyberinfrastructure have been critical achievements for EarthCube, we find that our dedicated community is what makes our program successful.<p>",
+    "siteUrl": "https://www.earthcube.org/",
+    "twitter": "EarthCube",
     "fonts": "IBM+Plex+Mono:500|IBM+Plex+Sans:700|Lato:400,400i,700,700i",
-    "testTemplate": "from wasabi import Printer\n__msg__ = Printer()\n__solution__ = \"\"\"${solution}\"\"\"\n\n${solution}\n\n${test}\n\ntry:\n    test()\nexcept AssertionError as e:\n    __msg__.fail(e)",
+    "testTemplate": "options(error=traceback)\nlibrary(testwhat)\n.solution <- \"${solutionEscaped}\"\n\n.solutionfile <- \"${solutionFileEscaped}\"\n\n\nsetup_state(sol_code = .solutionfile, stu_code = .solution)\n\ntryCatch({\n    ${test}\n    cat(paste(\"\\033[32m\", tw$get()$success_msg, \"\\033[0m\", sep = \"\"))\n}, error = function(e) {\n    cat(paste(\"\\033[31m\", e[1], \"\\033[0m\", sep = \"\"))\n})",
     "juniper": {
-        "repo": "ines/course-starter-python",
-        "branch": "binder",
-        "lang": "python",
-        "kernelType": "python3",
+        "repo": "throughput-ec/ec-workshops",
+        "branch": "master",
+        "lang": "r",
+        "kernelType": "ir",
         "debug": false
     },
     "showProfileImage": true,
     "footerLinks": [
         { "text": "Website", "url": "https://www.earthcube.org/" },
-        { "text": "Source", "url": "https://github.com/ines/course-starter-python" },
-        { "text": "Built with ♥", "url": "https://github.com/ines/course-starter-python" }
+        { "text": "Source", "url": "https://github.com/throughput-ec/ec-workshops" },
+        { "text": "Built with ♥", "url": "https://github.com/ines/course-starter-r" }
     ],
-    "theme": "#de7878"
+    "theme": "#ec625D"
 }
