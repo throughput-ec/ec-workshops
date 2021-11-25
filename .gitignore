@@ -41,3 +41,6 @@ vignettes/*.pdf
 # DS files created by Mac
 *.DS_Store
 *.cache/
+
+# Jupyter checkpoints
+*.ipynb_checkpoints/

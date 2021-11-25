@@ -100,8 +100,8 @@ ec-workshops
 |   |   ├── slides.module.sass
 |   |   └── typography.module.sass
 |   |   |
-    └── templates              
-        └── chapter.js
+|   └── templates              
+|   |   └── chapter.js
 |   |   |
 └── static               # This is where most of your media will live, be it for slides, or anything else. 
     ├── icon.png

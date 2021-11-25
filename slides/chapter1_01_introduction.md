@@ -8,18 +8,6 @@ type: slides
 
 # What is Jupyter?
 
-- For this workshop, we will be using R via [Jupyter](https://jupyter.org/index.html)
-
-- R is the programming language that runs computations
-- Jupyter is an integrated development environment (IDE) that provides an interface by adding convenient features and tools
-
-<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/38/Jupyter_logo.svg/1200px-Jupyter_logo.svg.png" alt="jupyter logo" align="left" width="25%" >
-
-<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/1b/R_logo.svg/1920px-R_logo.svg.png" alt="R logo" width="25%" align="center">
----
-
-## Jupyter Notebooks
-
 Notebooks are a great tool for exploration and for documenting your workflow.
 Notebooks allow you to write:
 - Code
@@ -28,6 +16,18 @@ Notebooks allow you to write:
 - Latex text for equations
 
 and much more in a single document!
+
+---
+
+For this workshop, we will be using R via [Jupyter](https://jupyter.org/index.html)
+
+- R is the programming language that runs computations
+
+- Jupyter is an integrated development environment (IDE) that provides an interface by adding convenient features and tools
+
+<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/38/Jupyter_logo.svg/1200px-Jupyter_logo.svg.png" alt="jupyter logo" align="left" width="25%" >
+
+<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/1b/R_logo.svg/1920px-R_logo.svg.png" alt="R logo" width="25%" align="center">
 
 ---
 
@@ -40,10 +40,11 @@ In the same way, rather than interacting with R directly, we will be using the J
 Jupyter will allow us to:
 - Run R code interactively
 - Use other languages such as Python, Julia, or Matlab!
+
 ---
 This is what a Jupyter Notebook looks like:
 
-![screenshot JN]()
+![screenshot JN]('./static/01_jupyter_notebook.png')
 
 ---
 

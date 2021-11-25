@@ -19,12 +19,11 @@ export default ({ data }) => {
             <Logo className={classes.logo} aria-label={siteMetadata.title} />
             <section>
 
-                <h1 className={classes.subtitle}><center>An EarthCube Interactive Course</center></h1>
+                <h1 className={classes.subtitle}><center>Welcome to EarthCube Interactive Workshops!</center></h1>
                 <div className={classes.introduction}>
                 <p></p>
 
                 <center>
-                <p>Welcome to EarthCube Interactive Workshops! </p>
                 <p>
                     These short courses will teach you how to conduct reproducible 
                     research using Data Sciences tools.  
@@ -33,9 +32,9 @@ export default ({ data }) => {
                     and Git for version control.  
                 </p>
                 <p>
-                    After this course, you will be able to process your own research
+                    After these modules, you will be able to process your own research
                     in a format suitable for analysis, writing your own analysis functions,
-                    and deriving data-driven insights via R Markdown files.
+                    and deriving data-driven insights via RMarkdown files and Jupyter Notebooks.
                 </p>
                 </center>
                 </div>
