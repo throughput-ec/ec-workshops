@@ -57,33 +57,33 @@ That's correct! We will use Jupyter's power to run R!
 
 </exercise>
 
-</exercise>
 
-<exercise id="3" title="Usinder Binder" type="slides">
+<exercise id="3" title="Using Binder" type="slides">
 
 <slides source="chapter1_02_using_binder">
 </slides>
 
+</exercise>
 
-<exercise id="4" title="First steps">
+<exercise id="4" title="Creating a New Notebook" type="slides">
+
+<slides source="chapter1_03_creating_a_notebook">
+</slides>
+
+<exercise id="5" title="First steps">
 
 This is a code exercise. The content can be formatted in simple Markdown – so
 you can have **bold text**, `code` or [links](https://spacy.io) or lists, like
 the one for the instructions below.
 
 - These are instructions and they can have bullet points.
-- The code block below will look for the files `exc_01_03`, `solution_01_03` and
-  `test_01_03` in `/exercises`.
+- The code block below will look for the files `exc_01_05`, `solution_01_05` and
+  `test_01_05` in `/exercises`.
 
-<codeblock id="01_03">
+<codeblock id="01_05">
 
 This is a hint.
 
 </codeblock>
 
 </exercise>
-
-<exercise id="5" title="Creating a New Notebook" type="slides">
-
-<slides source="chapter1_03_creating_a_notebook">
-</slides>
