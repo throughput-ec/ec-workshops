@@ -10,7 +10,7 @@
     "testTemplate": "options(error=traceback)\nlibrary(testwhat)\n.solution <- \"${solutionEscaped}\"\n\n.solutionfile <- \"${solutionFileEscaped}\"\n\n\nsetup_state(sol_code = .solutionfile, stu_code = .solution)\n\ntryCatch({\n    ${test}\n    cat(paste(\"\\033[32m\", tw$get()$success_msg, \"\\033[0m\", sep = \"\"))\n}, error = function(e) {\n    cat(paste(\"\\033[31m\", e[1], \"\\033[0m\", sep = \"\"))\n})",
     "juniper": {
         "repo": "throughput-ec/ec-workshops",
-        "branch": "master",
+        "branch": "binder",
         "lang": "r",
         "kernelType": "ir",
         "debug": false
