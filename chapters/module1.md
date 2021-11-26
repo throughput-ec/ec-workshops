@@ -70,6 +70,8 @@ That's correct! We will use Jupyter's power to run R!
 <slides source="chapter1_03_creating_a_notebook">
 </slides>
 
+</exercise>
+
 <exercise id="5" title="First steps">
 
 This is a code exercise. The content can be formatted in simple Markdown – so
