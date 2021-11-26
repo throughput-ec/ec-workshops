@@ -74,17 +74,11 @@ That's correct! We will use Jupyter's power to run R!
 
 <exercise id="5" title="First steps">
 
-This is a code exercise. The content can be formatted in simple Markdown – so
-you can have **bold text**, `code` or [links](https://spacy.io) or lists, like
-the one for the instructions below.
-
-- These are instructions and they can have bullet points.
-- The code block below will look for the files `exc_01_05`, `solution_01_05` and
-  `test_01_05` in `/exercises`.
+- Print the first few rows of the mtcars dataframe 
 
 <codeblock id="01_05">
 
-This is a hint.
+Use the command head() and pass in the mtcars data.
 
 </codeblock>
 
