@@ -21,7 +21,7 @@ A Binder is a code repository that contains:
 
 You will be working simultaneously with the Binder notebook and these slides.
 
-You can find the Binder [here](https://mybinder.org/v2/gh/throughput-ec/ec-binder/HEAD).
+You can find the  <a href="https://hub.gke2.mybinder.org/user/throughput-ec-ec-binder-de6sb0gs/lab" target="_blank">Binder</a>.
 
 Click on the previous link, a Binder will be created and you must see the following:
 
@@ -34,4 +34,6 @@ You will have to download your work each time you work with the Binder.
 
 ---
 
-# Explore the Binder!
+# Explore the <a href="https://hub.gke2.mybinder.org/user/throughput-ec-ec-binder-de6sb0gs/lab" target="_blank">Binder</a>
+
+!
