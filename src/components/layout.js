@@ -6,6 +6,7 @@ import { Link } from './link'
 import { H3 } from './typography'
 import Logo from '../../static/logo.svg'
 
+
 import '../styles/index.sass'
 import classes from '../styles/layout.module.sass'
 
@@ -64,7 +65,7 @@ const Layout = ({ isHome, title, description, children }) => {
                                         <H3>About EarthCube</H3>
                                         {meta.showProfileImage && (
                                             <img
-                                                src="profile.jpg"
+                                                src="../../static/profile.png"
                                                 alt=""
                                                 className={classes.profile}
                                             />
