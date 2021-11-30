@@ -65,7 +65,7 @@ const Layout = ({ isHome, title, description, children }) => {
                                         <H3>About EarthCube</H3>
                                         {meta.showProfileImage && (
                                             <img
-                                                src="../../ec-workshops/main/static/profile.jpg"
+                                                src="https://github.com/throughput-ec/ec-workshops/blob/main/static/profile.jpg?raw=true"
                                                 alt=""
                                                 className={classes.profile}
                                             />
