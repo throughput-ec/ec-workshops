@@ -7,7 +7,7 @@
 ## Objective
 
 This project aims to show some powerful use cases of Data Science tools in the Earth Sciences. 
-You can view the different modules deployed at  [site]()
+You can view the different modules deployed at  [site](https://throughput-ec.github.io/ec-workshops/)
 
 ## Contributors
 
