@@ -25,7 +25,7 @@ You can find the  <a href="https://mybinder.org/v2/gh/throughput-ec/ec-binder/HE
 
 Click on the previous link, the Binder will be launched. Choose to open a Jupyter Notebook and you must see the following:
 
-<img src="https://github.com/throughput-ec/ec-workshops/blob/main/static/module1/02_binder.png?raw=true" alt="Jupyter Notebook shot" width=75% align="center">
+<img src="https://github.com/throughput-ec/ec-workshops/blob/main/static/module1/02_binder.png?raw=true" alt="Jupyter Notebook shot" width=55% align="center">
 
 ---
 
@@ -34,6 +34,6 @@ You will have to download your work each time you work with the Binder.
 
 ---
 
-# Explore the Jupyter Notebook in the <a href="hhttps://mybinder.org/v2/gh/throughput-ec/ec-binder/HEAD" target="_blank">Binder</a>
+# Explore the Jupyter Notebook in the <a href="https://mybinder.org/v2/gh/throughput-ec/ec-binder/HEAD" target="_blank">Binder</a>
 
 !

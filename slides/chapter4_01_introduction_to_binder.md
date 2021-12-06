@@ -20,7 +20,7 @@ Configuration files should be placed in the root of the repository or in a binde
 
 # Motivations for Working with a Binder
 
-<img src="https://github.com/throughput-ec/ec-workshops/blob/main/static/module4/01_others_people_code.png?raw=true" alt="Other people code dependencies map" width=75% align="center">
+<img src="https://github.com/throughput-ec/ec-workshops/blob/main/static/module4/01_others_people_code.png?raw=true" alt="Other people code dependencies map" width=35% align="center">
 
 ---
 
