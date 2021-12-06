@@ -15,7 +15,7 @@ id: 8
 
 [Data Science A First Introduction - Chapter 11 Combining code and text with Jupyter](https://ubc-dsci.github.io/introduction-to-datascience/getting-started-with-jupyter.html)
 
-[Project Pythea Getting Started with Jupyter](https://foundations.projectpythia.org/foundations/getting-started-jupyter.html)
+[Project Pythia Getting Started with Jupyter](https://foundations.projectpythia.org/foundations/getting-started-jupyter.html)
 
 [Project Pythia - Jupyter Lab](https://foundations.projectpythia.org/foundations/jupyterlab.html)
 
