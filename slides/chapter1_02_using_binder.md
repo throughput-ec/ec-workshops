@@ -21,9 +21,9 @@ A Binder is a code repository that contains:
 
 You will be working simultaneously with the Binder notebook and these slides.
 
-You can find the  <a href="https://hub.gke2.mybinder.org/user/throughput-ec-ec-binder-de6sb0gs/lab" target="_blank">Binder</a>.
+You can find the  <a href="https://mybinder.org/v2/gh/throughput-ec/ec-binder/HEAD" target="_blank">Binder</a>.
 
-Click on the previous link, a Binder will be created and you must see the following:
+Click on the previous link, the Binder will be launched. Choose to open a Jupyter Notebook and you must see the following:
 
 <img src="https://github.com/throughput-ec/ec-workshops/blob/main/static/module1/02_binder.png?raw=true" alt="Jupyter Notebook shot" width=75% align="center">
 
@@ -34,6 +34,6 @@ You will have to download your work each time you work with the Binder.
 
 ---
 
-# Explore the <a href="https://hub.gke2.mybinder.org/user/throughput-ec-ec-binder-de6sb0gs/lab" target="_blank">Binder</a>
+# Explore the Jupyter Notebook in the <a href="hhttps://mybinder.org/v2/gh/throughput-ec/ec-binder/HEAD" target="_blank">Binder</a>
 
 !
