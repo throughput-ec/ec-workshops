@@ -22,7 +22,6 @@ jobs:
       - name: Install the gh-pages CLI
         run: npm install gh-pages -g
       - name: Build
-        shell: cmd
         env:
           TOKEN: ${{ secrets.ACCESS_TOKEN }}
         run: |
