@@ -22,7 +22,8 @@ jobs:
       - name: Install the gh-pages CLI
         run: npm install gh-pages -g
       - name: Build
-        run: gatsby build --prefix-paths && gh-pages -d public -r https://$TOKEN@github.com/throughput-ec/ec-workshop.git
-        with:
-          env:
-            TOKEN: ${{ secrets.ACCESS_TOKEN }}
+        shell: cmd
+        env:
+          TOKEN: ${{ secrets.ACCESS_TOKEN }}
+        run: |
+          gatsby build --prefix-paths && gh-pages -d public -r https://$TOKEN@github.com/throughput-ec/ec-workshop.git
