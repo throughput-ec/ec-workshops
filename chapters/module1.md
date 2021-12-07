@@ -83,3 +83,16 @@ Use the command head() and pass in the mtcars data.
 </codeblock>
 
 </exercise>
+
+<exercise id="6" title="Python trial steps">
+
+- Let's see if Python works
+
+<codeblock id="01_06">
+
+
+Python trail
+
+</codeblock>
+
+</exercise>
