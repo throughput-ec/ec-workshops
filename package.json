@@ -3,7 +3,8 @@
     "private": true,
     "description": "Earthcube workshops regarding DS tools",
     "version": "0.0.1",
-    "author": "Socorro Dominguez <sedv8808@gmail.com>",
+    "author": {"name": "Socorro Dominguez",
+        "email": "sedv8808@gmail.com"},
     "dependencies": {
         "@illinois/react-use-local-storage": "^1.1.0",
         "@jupyterlab/outputarea": "^0.19.1",
