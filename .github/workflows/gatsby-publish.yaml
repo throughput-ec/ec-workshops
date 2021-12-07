@@ -20,4 +20,4 @@ jobs:
       - name: Install Gatsby CLI
         run: npm install -g gatsby-cli@2.12.34
       - name: Build
-        run: gatsby build --prefix-paths && gh-pages -d public -r https://$secret.ACCESS_TOKEN@github.com/throughput-ec/ec-workshop
+        run: gatsby build --prefix-paths && gh-pages -d public -r https://${{ secrets.ACCESS_TOKEN }}@github.com/throughput-ec/ec-workshop
