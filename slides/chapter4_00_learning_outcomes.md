@@ -10,11 +10,15 @@ By the end of this module, you should:
 
 1. Understand what a Binder is.
 
-2. Be able to prepare a repository for Binder.
+2. Write a standard configuration file; such as `environment.yml` or an `install.R`.
 
-3. Understand how to write an `install.R` file.
+3. Prepare a repository for Binder.
 
-4. Share a link to your reproducible workflow in a BinderHub.
+4. Run a Jupyter Notebook or an Rmd in a temporary environment in the cloud ([Binder](mybinder.org))
+
+5. Share a link to a reproducible workflow.
+
+6. Know the limitations of Binder
 
 ---
 
