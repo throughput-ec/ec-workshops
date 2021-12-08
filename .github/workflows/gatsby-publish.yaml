@@ -25,4 +25,4 @@ jobs:
         env:
           TOKEN: ${{ secrets.ACCESS_TOKEN }}
         run: |
-          gatsby build --prefix-paths && gh-pages -d public -r https://$TOKEN@github.com/throughput-ec/ec-workshops
+          gatsby build --prefix-paths && gh-pages -d public -r git://$TOKEN@github.com/throughput-ec/ec-workshops.git

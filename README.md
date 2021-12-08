@@ -1,9 +1,9 @@
+# EarthCube Workshops
+
 [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/throughput-ec/ec-workshops/binder)
 
-[![CircleCI](https://circleci.com/gh/circleci/circleci-docs.svg?style=svg)](https://circleci.com/gh/circleci/circleci-docs)
- \- Test your build status - 
+[![example workflow](https://github.com/throughput-ec/ec-workshops/actions/workflows/gatsby-publish.yaml/badge.svg)](https://github.com/throughput-ec/ec-workshops/actions)
 
-# EarthCube Workshops
 ## Objective
 
 This project aims to show some powerful use cases of Data Science tools in the Earth Sciences. 
@@ -15,7 +15,6 @@ This project is an open project, and contributions are welcome from any individu
 
   * [Socorro Dominguez Vidana](https://sedv8808.github.io/) [![orcid](https://img.shields.io/badge/orcid-0000--0002--7926--4935-brightgreen.svg)](https://orcid.org/0000-0002-7926-4935)
 * [Simon Goring](http://www.goring.org/) [![orcid](https://img.shields.io/badge/orcid-0000--0002--2700--4605-brightgreen.svg)](https://orcid.org/0000-0002-2700-4605)
-  
 
 ### Tips for Contributing
 
