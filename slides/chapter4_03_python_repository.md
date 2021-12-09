@@ -13,6 +13,8 @@ type: slides
 - Initialize your repository with a README!
 - Clone the repository to your local machine.
 
+<img src="https://github.com/throughput-ec/ec-workshops/blob/main/static/module4/02_github.png?raw=true" alt="Binder from Git" width=45% align="center">
+
 ---
 
 # Step 2
@@ -21,15 +23,41 @@ type: slides
     - Create a Jupyter notebook.
     - Open a new code cell and write:
     ```
-    print("Hello world!)
+    import folium
+
+    m = folium.Map(location=[49.267665596, -123.241999032], zoom_start=12)
+
+    tooltip = "Click Here For More Info"
+
+    marker = folium.Marker(
+        location=[49.267665596, -123.241999032],
+        popup="<stong>UBC</stong>",
+        tooltip=tooltip)
+    marker.add_to(m)
+
+    m
     ```
-    - Save the Jupyter notebook. It should look like this:
+    - Save the Jupyter notebook. 
 
 ---
 
 # Step 3 
 
 — Create an `environment.yml` file into your Github repository.
+
+For our previous example, our dependencies are `folium` (and `pandas`).
+
+Our `environment.yml` file should look like this:
+
+```
+name: my-example-environment
+channels:
+  - conda-forge
+dependencies:
+  - pandas
+  - folium
+```
+
 You can find a template in the next "activity"
 
 ---
@@ -38,6 +66,8 @@ You can find a template in the next "activity"
 
 - Push all your repository changes back to GitHub.
 - Your repository should look now like this:
+
+<img src="https://github.com/throughput-ec/ec-workshops/blob/main/static/module4/05_github.png?raw=true" alt="Binder from Git" width=45% align="center">
 
 ---
 
@@ -57,7 +87,18 @@ https://github.com/your-username/my-first-python-binder
 https://mybinder.org/v2/gh/your-username/my-first-python-binder/HEAD
 ```
 
-- Once this is done simply hit the launch button. My Binder will create your binder repo in a few minutes.
+<img src="https://github.com/throughput-ec/ec-workshops/blob/main/static/module4/06_binder.png?raw=true" alt="Binder from Git" width=45% align="center">
+
+
+---
+
+# Step 5b
+
+- Once this is done simply hit the launch button. 
+- My Binder will create your binder repo in a few minutes.
+- Be patient. The first time it might take some while to build.
+
+<img src="https://github.com/throughput-ec/ec-workshops/blob/main/static/module4/07_binder.png?raw=true" alt="Binder from Git" width=45% align="center">
 
 ---
 
@@ -67,15 +108,26 @@ https://mybinder.org/v2/gh/your-username/my-first-python-binder/HEAD
 
 - You will see a "spinner" as Binder launches the repository.
 
-- Navigate your Jupyter notebook.
+<img src="https://github.com/throughput-ec/ec-workshops/blob/main/static/module4/08_binder.png?raw=true" alt="Binder from Git" width=45% align="center">
+
 
 ---
 
 # Step 7
 
+- Navigate your Jupyter notebook.
+
+<img src="https://github.com/throughput-ec/ec-workshops/blob/main/static/module4/09_binder.png?raw=true" alt="Binder from Git" width=45% align="center">
+
+---
+
+# Step 8
+
 - Once built, you can share the link to this with anybody you want to run your project on their machine.
 
 - Save your LaunchBinder Badge and share it!
+
+<img src="https://github.com/throughput-ec/ec-workshops/blob/main/static/module4/10_binder.png?raw=true" alt="Binder from Git" width=45% align="center">
 
 ---
 

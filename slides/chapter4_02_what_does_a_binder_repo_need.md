@@ -2,7 +2,7 @@
 type: slides
 ---
 
-# What Does Starting a Binder Look Like?
+<div><h1><img src="https://github.com/throughput-ec/ec-workshops/blob/main/static/module1/00_ec_slide1.png?raw=true" alt="EC Theme" width=25% align="left"/> Lesson 2<br>Setting a Binder Up</h1></div>
 
 ---
 # Getting to the Hub
@@ -11,6 +11,8 @@ If you visit [mybinder.org](https://mybinder.org/) you will encounter the follow
 
 <img src="https://github.com/throughput-ec/ec-workshops/blob/main/static/module4/00_binder.png?raw=true" alt="Binder" width=45% align="center">
 
+Before you can fill in the information, what do you need to create a Binder repository?
+
 ---
 
 # What Do you Need to Build a Binder Repository?
@@ -18,8 +20,16 @@ If you visit [mybinder.org](https://mybinder.org/) you will encounter the follow
 
 - You will need to have a Git repository.
 
-- The repository must be in a *public* location online (`GitHub`, `GitLab`, `Bitbucket`, others).
+- The repository must be in a *public* location online. 
 
+<img src="https://github.com/throughput-ec/ec-workshops/blob/main/static/module4/02_github.png?raw=true" alt="Binder from Git" width=45% align="center">
+
+---
+# What Do you Need to Build a Binder Repository?
+**Git Repository**
+
+- You can work with other Git repository hosting manager tool such as:
+    - `GitHub`, `GitLab`, `Bitbucket`, and MORE!
 
 <img src="https://github.com/throughput-ec/ec-workshops/blob/main/static/module4/01_binder.png?raw=true" alt="Binder from Git" width=45% align="center">
 
@@ -32,14 +42,23 @@ If you visit [mybinder.org](https://mybinder.org/) you will encounter the follow
 
 - Configuration files should be placed in the root of the repository or in a binder/ folder in the repository’s root.
 
+<img src="https://github.com/throughput-ec/ec-workshops/blob/main/static/module4/03_github.png?raw=true" alt="Binder from Git" width=45% align="center">
+
 ---
 
 # What Do you Need to Build a Binder Repository?
-**Safety**
+**A File to Share**
 
 - The repository contains content designed for people to read.
     - A Jupyter Notebook 
     - An R script to make a visualization.
+
+<img src="https://github.com/throughput-ec/ec-workshops/blob/main/static/module4/04_github.png?raw=true" alt="Binder from Git" width=45% align="center">
+
+---
+
+# What Do you Need to Build a Binder Repository?
+**Security**
 
 - The repository **does not** require any sensitive information 
     - Passwords
@@ -59,6 +78,8 @@ If you visit [mybinder.org](https://mybinder.org/) you will encounter the follow
     - [mybinder.org](https://mybinder.org/)
     - [Alan Turing Institute Binder](https://turing.mybinder.org/)
     - and [others](https://mybinder.readthedocs.io/en/latest/about/federation.html)
+
+<img src="https://github.com/throughput-ec/ec-workshops/blob/main/static/module4/00_binder.png?raw=true" alt="Binder" width=45% align="center">
 
 ---
 
