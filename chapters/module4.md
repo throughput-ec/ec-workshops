@@ -115,7 +115,7 @@ Use this template as your `runtime.txt` file
 
 ```
 # Today's date
-r-2018-12-31
+r-2021-12-07
 ```
 
 Use this template as your `install.R` file

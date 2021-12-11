@@ -2,11 +2,7 @@
 type: slides
 ---
 
----
-type: slides
----
-  
-# Setting Up the Binder
+<div><h1><img src="https://github.com/throughput-ec/ec-workshops/blob/main/static/module1/00_ec_slide1.png?raw=true" alt="EC Theme" width=25% align="left"/> Lesson 4<br>Setting Up the R Binder</h1></div>
 
 ---
 
@@ -25,33 +21,32 @@ type: slides
 
 - Inside your Github repository folder:
     - Create an Rmd file.
-    - Open a new code Rmd file and write:
-    '''
+    - Copy and paste the following slide. We'll learn more about Rmd files in the next module.)
+    - Save the Rmd file. 
 
-    ```{r setup, include=FALSE}
-    knitr::opts_chunk$set(echo = TRUE)
-    library(leaflet)
-    leaflet(options = leafletOptions(minZoom = 0, maxZoom = 18))
+---
+'''
+
+    ```{r setup, include=FALSE}  
+    knitr::opts_chunk$set(echo = TRUE)  
+    library(leaflet)  
+    leaflet(options = leafletOptions(minZoom = 0, maxZoom = 18))  
     ```
 
     ## My Leaflet Map
 
     **TASK:** Find UBC in a Leaflet map.
+ 
 
     ```{r}
-    map1 <- leaflet() %>%
-                addProviderTiles(providers$Stamen.TerrainBackground) %>%
-                addTiles() %>%
-                addCircleMarkers(lng =-123.241999032 , lat = 49.267665596,
-                popup = paste0("UBC"),
-                clusterOptions = markerClusterOptions(),
-                options = markerOptions(riseOnHover = TRUE))
-    map1
+    map1 <- leaflet() %>%  
+                addProviderTiles(providers$Stamen.TerrainBackground) %>%  
+                addTiles() %>%  
+                addCircleMarkers(lng =-123.241999032 , lat = 49.267665596,  
+                popup = paste0("UBC"))  
+    map1  
     ```
-    '''
-    
-    - Save the Rmd file. 
-
+'''
 ---
 
 # Step 3 
@@ -66,7 +61,9 @@ type: slides
 2. `install.R` A list of `install.packages('package_name')` commands, one per line.
     For our example
     ```
-    install.packages('leaflet')
+    install.packages(c("leaflet", "tidyverse"
+                       "knitr", "rmarkdown",
+                       "caTools", "bitops"))
     ```
     
 You can find a template for both files in the next section.
@@ -78,7 +75,7 @@ You can find a template for both files in the next section.
 - Push all your repository changes back to GitHub.
 - Your repository should look now like this:
 
-<img src="https://github.com/throughput-ec/ec-workshops/blob/main/static/module4/05_github.png?raw=true" alt="Binder from Git" width=45% align="center">
+<img src="https://github.com/throughput-ec/ec-workshops/blob/main/static/module4/12_github.png?raw=true" alt="Binder from Git" width=45% align="center">
 
 ---
 
@@ -91,15 +88,13 @@ https://github.com/your-username/my-first-R-binder
 ```
 
 - Where it says Git ref type in main or the branch that you woud like to use.
-- Where it says path to notebook type in the Rmd file name. 
-
+- Where it says "URL to open (optional)", choose URL and type `rstudio`
 - As you type, the webpage generates a link in the "Copy the URL below..." box. It should look like this:
 ```
-https://mybinder.org/v2/gh/your-username/my-R-python-binder/main/my_file.Rmd
+https://mybinder.org/v2/gh/your-username/my-first-R-binder/main?urlpath=rstudio
 ```
 
-<img src="https://github.com/throughput-ec/ec-workshops/blob/main/static/module4/06_binder.png?raw=true" alt="Binder from Git" width=45% align="center">
-
+<img src="https://github.com/throughput-ec/ec-workshops/blob/main/static/module4/13_binder.png?raw=true" alt="Binder from Git" width=45% align="center">
 
 ---
 
@@ -109,7 +104,7 @@ https://mybinder.org/v2/gh/your-username/my-R-python-binder/main/my_file.Rmd
 - My Binder will create your binder repo in a few minutes.
 - Be patient. The first time it might take some while to build.
 
-<img src="https://github.com/throughput-ec/ec-workshops/blob/main/static/module4/07_binder.png?raw=true" alt="Binder from Git" width=45% align="center">
+<img src="https://github.com/throughput-ec/ec-workshops/blob/main/static/module4/14_binder.png?raw=true" alt="Binder from Git" width=45% align="center">
 
 ---
 
@@ -126,19 +121,21 @@ https://mybinder.org/v2/gh/your-username/my-R-python-binder/main/my_file.Rmd
 
 # Step 7
 
-- Navigate your Rmd file.
+- You will have to open your `.Rmd` file manually by clicking on it.
+    - You can find it on the bottom right panel.
 
-<img src="https://github.com/throughput-ec/ec-workshops/blob/main/static/module4/09_binder.png?raw=true" alt="Binder from Git" width=45% align="center">
+
+<img src="https://github.com/throughput-ec/ec-workshops/blob/main/static/module4/15_binder.png?raw=true" alt="Binder from Git" width=45% align="center">
 
 ---
 
 # Step 8
 
-- Once built, you can share the link to this with anybody you want to run your project on their machine.
+- Once built, you can share the link to this RStudio instance with anybody you want to run your project on their machine.
 
 - Save your LaunchBinder Badge and share it!
 
-<img src="https://github.com/throughput-ec/ec-workshops/blob/main/static/module4/10_binder.png?raw=true" alt="Binder from Git" width=45% align="center">
+<img src="https://github.com/throughput-ec/ec-workshops/blob/main/static/module4/16_binder.png?raw=true" alt="Binder from Git" width=45% align="center">
 
 ---
 

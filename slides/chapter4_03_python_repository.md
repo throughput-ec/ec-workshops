@@ -2,7 +2,7 @@
 type: slides
 ---
   
-# Setting Up the Binder
+<div><h1><img src="https://github.com/throughput-ec/ec-workshops/blob/main/static/module1/00_ec_slide1.png?raw=true" alt="EC Theme" width=25% align="left"/> Lesson 3<br>Setting Up the Python Binder</h1></div>
 
 ---
 
@@ -80,7 +80,7 @@ https://github.com/your-username/my-first-python-binder
 ```
 
 - Where it says Git ref type in main or the branch that you woud like to use.
-- Where it says path to notebook type in the notebook file name. 
+- Where it says "URL to open (optional)" type in the notebook file name and choose "file". 
 
 - As you type, the webpage generates a link in the "Copy the URL below..." box. It should look like this:
 ```
