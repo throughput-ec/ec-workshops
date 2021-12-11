@@ -1,7 +1,10 @@
 ---
 title: 'Module 1: Intro to Jupyter Notebooks'
 description:
-  'In this module, you will learn how to write your own Jupyter Notebook.'
+  'In this module, you will learn how to write your own Jupyter Notebook.
+  In Module 2 you will also learn how to install dependencies and configure your conda environment.
+  In Module 4 we will talk more in detail about what a Binder entails.
+  '
 prev: null
 next: /module2
 type: chapter
@@ -79,19 +82,6 @@ That's correct! We will use Jupyter's power to run R!
 <codeblock id="01_05">
 
 Use the command head() and pass in the mtcars data.
-
-</codeblock>
-
-</exercise>
-
-<exercise id="6" title="Python trial steps">
-
-- Let's see if Python works
-
-<codeblock id="01_06">
-
-
-Python trail
 
 </codeblock>
 
