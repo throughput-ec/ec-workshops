@@ -23,21 +23,37 @@ id: 5
 
 </exercise>
 
-<exercise id="2" title="Creating an Rmd file" type="slides">
+<exercise id="2" title="First Steps">
+
+**Give it a try!** Type the R code below and try running it all of the ways described above.
+
+<codeblock id="05_01">
+
+1. Assign to `x` the value of 5.
+2. Print `x`
+
+Use `<-` to a assign a value to a variable.
+Use `print` to print the variable.
+
+</codeblock>
+
+</exercise>
+
+<exercise id="3" title="Creating an Rmd file" type="slides">
 
 <slides source="chapter5_02_creating_an_Rmd_file">
 </slides>
 
 </exercise>
 
-<exercise id="3" title="Creating a Presentation" type="slides">
+<exercise id="4" title="Creating a Presentation" type="slides">
 
 <slides source="chapter5_03_creating_a_presentation.md">
 </slides>
 
 </exercise>
 
-<exercise id="4" title="Creating an R Project" type="slides">
+<exercise id="5" title="Creating an R Project" type="slides">
 
 <slides source="chapter5_04_R_project">
 </slides>
@@ -45,7 +61,7 @@ id: 5
 </exercise>
 
 
-<exercise id="5" title="Summary and Conclusions" type="slides">
+<exercise id="6" title="Summary and Conclusions" type="slides">
 
 <slides source="chapter5_05_summary_and_conclusions">
 </slides>
