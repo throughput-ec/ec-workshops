@@ -25,7 +25,7 @@ id: 5
 
 <exercise id="2" title="First Steps">
 
-**Give it a try!** Type the R code below and try running it all of the ways described above.
+Type the R code below and try running it.
 
 <codeblock id="05_01">
 
@@ -34,6 +34,19 @@ id: 5
 
 Use `<-` to a assign a value to a variable.
 Use `print` to print the variable.
+
+</codeblock>
+
+
+Rewrite the following code and see what happens.
+
+```
+boxplot(mtcars$mpg, grouping(mtcars$cyl))
+```
+<codeblock id="05_02">
+
+Now, go to the RStudio Binder and run the above code in the Console panel.
+What happened there? Annotate your observations!
 
 </codeblock>
 
