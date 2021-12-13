@@ -87,8 +87,7 @@ Under construction:
 
 [Cheatsheet](https://rmarkdown.rstudio.com/lesson-15.html)
 
-[Vancouver DataJam](https://www.yukatakemon.com/post/datajam-2021-intro-r-rstudio/datajam-2021-intro/)
-
+[R Markdown Reference Guide](https://www.rstudio.com/wp-content/uploads/2015/03/rmarkdown-reference.pdf)
 
 </exercise>
 

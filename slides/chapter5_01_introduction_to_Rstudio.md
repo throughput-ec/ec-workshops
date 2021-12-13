@@ -15,7 +15,8 @@ It includes tools for:
 - code completion
 - debugging.
 
-You can also work with Rmd files which enable a notebook-like functionality:
+You can also work with Rmd files which enable a notebook-like functionality.
+You can use other language engines, such as Python.
 
 ---
 
@@ -53,92 +54,59 @@ When running R code in the console output ends up in one of to places, depending
 
 * Graphical output: displayed in the Files/Help/Plots panel *usually* at the bottom right of the Window.
 
---
-
-**Give it a try!** See how graphical output is displayed in RStudio by typing the code below in your editor and then running it.
-```
-boxplot(mtcars$mpg, grouping(mtcars$cyl))
-```
-
 ---
 
-## Gettin help in RStudio
+## Getting help in RStudio
 
-If you want to know more about what a function or package does, its a similar command to getting help in Jupyter, either:
+If you want to know more about what a function or package does, type a `?` followed by the function's name
 
 ```
 ?function_name
 ```
 
-or
+Help is going to be available in the bottom right pane of RStudio.
 
-```
-help(function_name)
-```
+---
 
-Help then arrives in the panel in the bottom right-hand pane of your IDE.
+## The Files Pane Importance
 
---
-
-**Give it a try!** Try getting the help for the function named `mean`.
-
+When you open in RStudio a `.R` or `.Rmd` file the RStudio, the current working directory is **not** neccesarily the project working directory, or the directory of the file you opened.
 
 ---
 
 ## Where am I? (or the files pane)
 
-Different from Jupyter, when you open RStudio you open a `.R` or `.Rmd` file the RStudio, the current working directory is **not** neccesarily the project working directory, or the directory of the file you opened.
+**EVERY SESSION** you need to tell RStudio what your `working directory` is. Especially if you are loading different files.
 
+You can find out where you are by:
 
-![](https://media.giphy.com/media/oKQW9bVVyalGg/giphy.gif)
+1. typing `getwd()` in the console
 
----
-
-## Where am I? (or the files pane)
-
-**EVERY SESSION** you need to tell RStudio where you are working. Especially if you are loading other files outside of your `.R` or `.Rmd` file.
-
-So, where are you when you open RStudio? You can find out one of two ways:
-
-1. type `getwd()` in the console
-
-2. In the files pane, click the cog/More button and then click "Go To Working Directory"
-
---
-
-**Give it a try!** Figure out what your RStudio's current working directory is using both methods.
+2. In the files panel, click the cog/More button and then click "Go To Working Directory"
 
 ---
 
-## Where should I be?
+## Setting your Working Directory
 
-To make your life easier, set your working directory to the root directory of the Git repository you are working in!
-
-![](https://media.giphy.com/media/3o7aCTPPm4OHfRLSH6/giphy.gif)
-
----
-
-## Setting the working directory
+Set your working directory to the root directory of the Git repository you are working in!
 
 You can set the working directory using the following 3 ways:
 
-1. type `setwd("PATH")` in the console
+1. In the Session menu, click Set Working Directory and then Choose Directory. Navigate the opened file browser to choose the directory. 
 
-2. In the files pane, navigate the file structure to where you want the working directory to be. Then click the cog/More button and then click "Set As Working Directory"
+2. In the files panel, navigate the file structure to where you want the working directory to be. Then click the cog/More button and then click "Set As Working Directory"
 
-3. In the Session menu, click Set Working Directory and then Choose Directory. Navigate the opened file brower to choose the directory. 
-
---
-
-**Give it a try!** Use each method to set the working direcytory to a different place. Each time, verify it worked each time by typing `getwd()` in the console.
+3. type `setwd("PATH")` in the console.
 
 ---
 
 ## Setting the working directory is important!
 
-If you are working in RStudio and then you start looking like this - you probably forgot to set the working directory.
+If you are working in RStudio and you start feeling lost, you probably forgot to set the working directory.
 
-![](https://media.giphy.com/media/CPskAi4C6WLHa/giphy.gif)
+We will see how to create R Projects later which will help us keep our directory clean.
+
+**Suggestion:** Try using the [here](https://github.com/jennybc/here_here) package instead.
 
 ---
 
