@@ -62,16 +62,16 @@ Through our journey with Docker, the following terms might come often:
 
 - A VM has its own CPU, storage, memory, and access to the internet.
 
-- software-based versions of a computer sotred in a file tipically called an **image**
+- software-based versions of a computer sorted in a file tipically called an **image**
 
 - A *VM image* is a set of instructions on how exactly to assemble the code and achieve a desired software configuration.
 
 ---
 
 ### Container
-- Software executable bundles where the bins, libraries, and dependencies are packaged alongside their cod under a standardized framework.
+- Software executable bundles where the bins, libraries, and dependencies are packaged alongside their code under a standardized framework.
 
-- Lightweight images of application can then be run anywehre: desktop, cloud, etc...
+- Lightweight images of application can then be run anywhere: desktop, cloud, etc...
 
 - This avoids the "It works on my machine" problem.
 

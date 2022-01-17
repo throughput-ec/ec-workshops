@@ -13,7 +13,9 @@ type: slides
 - Initialize your repository with a README!
 - Clone the repository to your local machine.
 
-<img src="https://github.com/throughput-ec/ec-workshops/blob/main/static/module4/02_github.png?raw=true" alt="Binder from Git" width=45% align="center">
+<a href="https://github.com/throughput-ec/ec-workshops/blob/main/static/module4/02_github.png?raw=true" target="_blank">
+<img src="https://github.com/throughput-ec/ec-workshops/blob/main/static/module4/02_github.png?raw=true" alt="Git requirements for Binder" width=45% align="center" title="Click to zoom in"> 
+</a>
 
 ---
 
@@ -24,9 +26,9 @@ type: slides
     - Open a new code cell and write:
     ```
     import folium
+    import pandas
 
     m = folium.Map(location=[49.267665596, -123.241999032], zoom_start=12)
-
     tooltip = "Click Here For More Info"
 
     marker = folium.Marker(
@@ -34,7 +36,6 @@ type: slides
         popup="<stong>UBC</stong>",
         tooltip=tooltip)
     marker.add_to(m)
-
     m
     ```
     - Save the Jupyter notebook. 
@@ -45,14 +46,14 @@ type: slides
 
 — Create an `environment.yml` file into your Github repository.
 
-For our previous example, our dependencies are `folium` (and `pandas`).
+For our previous example, our dependencies are `folium` and `pandas`.
 
 Our `environment.yml` file should look like this:
 
 ```
 name: my-example-environment
-channels:
-  - conda-forge
+channels:   
+  - conda-forge 
 dependencies:
   - pandas
   - folium
@@ -67,7 +68,9 @@ You can find a template in the next "activity"
 - Push all your repository changes back to GitHub.
 - Your repository should look now like this:
 
-<img src="https://github.com/throughput-ec/ec-workshops/blob/main/static/module4/05_github.png?raw=true" alt="Binder from Git" width=45% align="center">
+<a href="https://github.com/throughput-ec/ec-workshops/blob/main/static/module4/05_github.png?raw=true" target="_blank">
+<img src="https://github.com/throughput-ec/ec-workshops/blob/main/static/module4/05_github.png?raw=true" alt="First py binder repo" width=45% align="center" title="Click to zoom in"> 
+</a>
 
 ---
 
@@ -79,15 +82,19 @@ You can find a template in the next "activity"
 https://github.com/your-username/my-first-python-binder
 ```
 
-- Where it says Git ref type in main or the branch that you woud like to use.
+- Where it says Git ref type in `main` or the branch that you woud like to use.
 - Where it says "URL to open (optional)" type in the notebook file name and choose "file". 
 
-- As you type, the webpage generates a link in the "Copy the URL below..." box. It should look like this:
+- As you type, the webpage generates a link in the "Copy the URL below..." box. It looks like this:
 ```
 https://mybinder.org/v2/gh/your-username/my-first-python-binder/HEAD
 ```
 
-<img src="https://github.com/throughput-ec/ec-workshops/blob/main/static/module4/06_binder.png?raw=true" alt="Binder from Git" width=45% align="center">
+---
+
+<a href="https://github.com/throughput-ec/ec-workshops/blob/main/static/module4/06_binder.png?raw=true" target="_blank">
+<img src="https://github.com/throughput-ec/ec-workshops/blob/main/static/module4/06_binder.png?raw=true" alt="Zero to Binder" width=65% align="center" title="Click to zoom in"> 
+</a>
 
 
 ---
@@ -98,7 +105,9 @@ https://mybinder.org/v2/gh/your-username/my-first-python-binder/HEAD
 - My Binder will create your binder repo in a few minutes.
 - Be patient. The first time it might take some while to build.
 
-<img src="https://github.com/throughput-ec/ec-workshops/blob/main/static/module4/07_binder.png?raw=true" alt="Binder from Git" width=45% align="center">
+<a href="https://github.com/throughput-ec/ec-workshops/blob/main/static/module4/07_binder.png?raw=true" target="_blank">
+<img src="https://github.com/throughput-ec/ec-workshops/blob/main/static/module4/07_binder.png?raw=true" alt="Binder Process" width=40% align="center" title="Click to zoom in"> 
+</a>
 
 ---
 
@@ -108,16 +117,21 @@ https://mybinder.org/v2/gh/your-username/my-first-python-binder/HEAD
 
 - You will see a "spinner" as Binder launches the repository.
 
-<img src="https://github.com/throughput-ec/ec-workshops/blob/main/static/module4/08_binder.png?raw=true" alt="Binder from Git" width=45% align="center">
+<a href="https://github.com/throughput-ec/ec-workshops/blob/main/static/module4/08_binder.png?raw=true" target="_blank">
+<img src="https://github.com/throughput-ec/ec-workshops/blob/main/static/module4/08_binder.png?raw=true" alt="Spinner" width=45% align="center" title="Click to zoom in"> 
+</a>
 
 
 ---
 
 # Step 7
 
-- Navigate your Jupyter notebook.
+- Go to the link provided by Binder. 
+- You should now be able to work and navigate the last version of your pushed Jupyter notebook.
 
-<img src="https://github.com/throughput-ec/ec-workshops/blob/main/static/module4/09_binder.png?raw=true" alt="Binder from Git" width=45% align="center">
+<a href="https://github.com/throughput-ec/ec-workshops/blob/main/static/module4/09_binder.png?raw=true" target="_blank">
+<img src="https://github.com/throughput-ec/ec-workshops/blob/main/static/module4/09_binder.png?raw=true" alt="Binder from Git" width=45% align="center" title="Click to zoom in"> 
+</a>
 
 ---
 
@@ -125,9 +139,12 @@ https://mybinder.org/v2/gh/your-username/my-first-python-binder/HEAD
 
 - Once built, you can share the link to this with anybody you want to run your project on their machine.
 
-- Save your LaunchBinder Badge and share it!
+- Save your LaunchBinder Badge and share it! [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/sedv8808/my-first-python-binder/main?labpath=my-folium-map-notebook.ipynb)
 
-<img src="https://github.com/throughput-ec/ec-workshops/blob/main/static/module4/10_binder.png?raw=true" alt="Binder from Git" width=45% align="center">
+
+<a href="https://github.com/throughput-ec/ec-workshops/blob/main/static/module4/10_binder.png?raw=true" target="_blank">
+<img src="https://github.com/throughput-ec/ec-workshops/blob/main/static/module4/10_binder.png?raw=true" alt="Binder Badge" width=45% align="center" title="Click to zoom in"> 
+</a>
 
 ---
 

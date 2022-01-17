@@ -18,14 +18,14 @@ type: slides
 
 1. Launch Docker is to open a Unix Shell:
   - On Mac or Windows, use the `Docker Quickstart Terminal` that you installed.
-  - On a linux machine, use a terminal prompt.
+  - On a Linux machine, use a terminal prompt.
 
 2. We are going to use a pre-existing image: [rocker/geospatial](https://hub.docker.com/r/rocker/geospatial). 
 
 3. In the `Docker Quickstart Terminal` type:
 
 ```
-docker run --rm -p 8787:8787 rocker/verse
+docker run --rm -p 8787:8787 rocker/geospatial
 ```
 
 ---
@@ -34,10 +34,12 @@ docker run --rm -p 8787:8787 rocker/verse
 
 `*p` and `--rm` are flags that customize how the container is run. 
 
-`-p` : This is the port that you need to specify where you will be working. Since we specified that we wanted to use port 8787 in our command line, we need to go to:
+`-p` : This is the port that you need to specify where you will be working.  
+Since we specified that we wanted to use port 8787 in our command line, we need to go to:
 http://localhost:8787/
 
-`-–rm`: delete the container when it is quitted. Otherwise, a version of it will be saved to our local computer. Containers can occupy a lot of disk space.
+`-–rm`: delete the container when it is quitted. Otherwise, a version of it will be saved to our local computer.  
+Containers can occupy a lot of disk space.
 
 ---
 ## Launching Our First Docker Image
@@ -63,6 +65,8 @@ Thus, you would enter http://192.168.99.100:8787 in your browser as the url.
 Where did `rocker/geospatial` came from? 
 - If you try to run a Docker container which you have not installed locally, Docker will automatically search for the container on Docker Hub (an online repository for docker images).
 - If it exists, it will download it.
+- In our case, this is the <a href="https://hub.docker.com/r/rocker/geospatial" target="_blank"> Docker repository </a>
+- You can notice that it contains some instructions and all the dependencies that are included in this image.
 
 ---
 
@@ -72,11 +76,20 @@ Where did `rocker/geospatial` came from?
 
 ```
 username: rstudio 
-password: rstudio
+password: # given in terminal
 ```
+
+---
 
 - You are able to work with RStudio in your browser in much the same way as you would on your desktop.
 
+- Look at your terminal, the password is there. You can change the password with the flag `-e PASSWORD`
+
+- Exercise: Change the login password.
+
+```
+docker run --rm -e PASSWORD=<YOUR_PASS> -p 8787:8787 rocker/geospatial
+```
 ---
 
 ## Linking Volumes
@@ -105,7 +118,7 @@ plot(x, y)
 
 6. Relaunch a Docker container using the RStudio image as you did previously:
 ```
-docker run --rm -p 8787:8787 rocker/verse
+docker run --rm -p 8787:8787 rocker/geospatial
 ```
 
 7. Go to `http://localhost:8787/` in your browser.
@@ -120,7 +133,7 @@ docker run --rm -p 8787:8787 rocker/verse
 
 - When launching a container, add the `-v` flag along with the path to your project’s root directory and the path to the container: 
 ```
-docker run --rm -p 8787:8787 -v /Users/your_user/Documents/r_docker_tutorial:/home/rstudio/r-docker-tutorial rocker/verse
+docker run --rm -p 8787:8787 -v /Users/your_user/Documents/r_docker_tutorial:/home/rstudio/r-docker-tutorial rocker/geospatial
 ```
 
 - Go then to `http://localhost:8787/` in your browser.

@@ -22,9 +22,9 @@ type: slides
 
 If you want to launch some sample binders take a look at:
 
-[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/throughput-ec/ec-binder/HEAD) Jupyter Binder
+[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/sedv8808/my-first-python-binder/main?labpath=my-folium-map-notebook.ipynb) Jupyter Binder
 
-[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/throughput-ec/ec-binder/main?urlpath=rstudio) RStudio Binder
+[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/sedv8808/my-first-R-binder/main?urlpath=rstudio) RStudio Binder
 
 ---
 
@@ -43,4 +43,4 @@ If you want to launch some sample binders take a look at:
 
 ---
 
-# Let's practice what we learned!
+# Let's use what we learned!

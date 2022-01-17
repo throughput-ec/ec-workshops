@@ -9,7 +9,9 @@ type: slides
 
 If you visit [mybinder.org](https://mybinder.org/) you will encounter the following screen:
 
-<img src="https://github.com/throughput-ec/ec-workshops/blob/main/static/module4/00_binder.png?raw=true" alt="Binder" width=45% align="center">
+<a href="https://github.com/throughput-ec/ec-workshops/blob/main/static/module4/00_binder.png?raw=true" target="_blank">
+<img src="https://github.com/throughput-ec/ec-workshops/blob/main/static/module4/00_binder.png?raw=true" alt="Binder" width=45% align="center" title = "Click to zoom in">
+</a>
 
 Before you can fill in the information, what do you need to create a Binder repository?
 
@@ -22,16 +24,21 @@ Before you can fill in the information, what do you need to create a Binder repo
 
 - The repository must be in a *public* location online. 
 
-<img src="https://github.com/throughput-ec/ec-workshops/blob/main/static/module4/02_github.png?raw=true" alt="Binder from Git" width=45% align="center">
+<a href="https://github.com/throughput-ec/ec-workshops/blob/main/static/module4/02_github.png?raw=true" target="_blank">
+<img src="https://github.com/throughput-ec/ec-workshops/blob/main/static/module4/02_github.png?raw=true" alt="Git requirements for Binder" width=35% align="center" title = "Click to zoom in">
+</a>
+
 
 ---
 # What Do you Need to Build a Binder Repository?
 **Git Repository**
 
-- You can work with other Git repository hosting manager tool such as:
+- You can work with other Git repository hosting manager tools such as:
     - `GitHub`, `GitLab`, `Bitbucket`, and MORE!
 
-<img src="https://github.com/throughput-ec/ec-workshops/blob/main/static/module4/01_binder.png?raw=true" alt="Binder from Git" width=45% align="center">
+<a href="https://github.com/throughput-ec/ec-workshops/blob/main/static/module4/01_binder.png?raw=true" target="_blank">
+<img src="https://github.com/throughput-ec/ec-workshops/blob/main/static/module4/01_binder.png?raw=true" alt="Binder site" width=45% align="center" title = "Click to zoom in">
+</a>
 
 ---
 
@@ -40,10 +47,11 @@ Before you can fill in the information, what do you need to create a Binder repo
 
 - The repository must have configuration files that specify its environment.
 
-- Configuration files should be placed in the root of the repository or in a binder/ folder in the repository’s root.
+- These configuration files should be placed in the root of the repository or in a binder/ folder in the repository’s root.
 
-<img src="https://github.com/throughput-ec/ec-workshops/blob/main/static/module4/03_github.png?raw=true" alt="Binder from Git" width=45% align="center">
-
+<a href="https://github.com/throughput-ec/ec-workshops/blob/main/static/module4/03_github.png?raw=true" target="_blank">
+<img src="https://github.com/throughput-ec/ec-workshops/blob/main/static/module4/03_github.png?raw=true" alt="Configuration Files" width=45% align="center" title = "Click to zoom in">
+</a>
 ---
 
 # What Do you Need to Build a Binder Repository?
@@ -53,7 +61,9 @@ Before you can fill in the information, what do you need to create a Binder repo
     - A Jupyter Notebook 
     - An R script to make a visualization.
 
-<img src="https://github.com/throughput-ec/ec-workshops/blob/main/static/module4/04_github.png?raw=true" alt="Binder from Git" width=45% align="center">
+<a href="https://github.com/throughput-ec/ec-workshops/blob/main/static/module4/04_github.png?raw=true" target="_blank">
+<img src="https://github.com/throughput-ec/ec-workshops/blob/main/static/module4/04_github.png?raw=true" alt="Pointing to sharing the right file" width=45% align="center" title = "Click to zoom in">
+</a>
 
 ---
 
@@ -79,7 +89,13 @@ Before you can fill in the information, what do you need to create a Binder repo
     - [Alan Turing Institute Binder](https://turing.mybinder.org/)
     - and [others](https://mybinder.readthedocs.io/en/latest/about/federation.html)
 
-<img src="https://github.com/throughput-ec/ec-workshops/blob/main/static/module4/00_binder.png?raw=true" alt="Binder" width=45% align="center">
+---
+# What Do you Need to Build a Binder Repository?
+**A BinderHub**
+
+<a href="https://github.com/throughput-ec/ec-workshops/blob/main/static/module4/00_binder.png?raw=true" target="_blank">
+<img src="https://github.com/throughput-ec/ec-workshops/blob/main/static/module4/00_binder.png?raw=true" alt="Binder Org" width=45% align="center" title = "Click to zoom in"> 
+</a>
 
 ---
 

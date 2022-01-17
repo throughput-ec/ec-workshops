@@ -13,7 +13,9 @@ type: slides
 - Initialize your repository with a README!
 - Clone the repository to your local machine.
 
-<img src="https://github.com/throughput-ec/ec-workshops/blob/main/static/module4/11_github.png?raw=true" alt="Binder from Git" width=45% align="center">
+<a href="https://github.com/throughput-ec/ec-workshops/blob/main/static/module4/11_github.png?raw=true" target="_blank">
+<img src="https://github.com/throughput-ec/ec-workshops/blob/main/static/module4/11_github.png?raw=true" alt="Binder Process" width=45% align="center" title="Click to zoom in"> 
+</a>
 
 ---
 
@@ -21,10 +23,11 @@ type: slides
 
 - Inside your Github repository folder:
     - Create an Rmd file.
-    - Copy and paste the following slide. We'll learn more about Rmd files in the next module.)
+    - Copy and paste the following slide. (We'll learn more about Rmd files in the next module.)
     - Save the Rmd file. 
 
 ---
+
 '''
 
     ```{r setup, include=FALSE}  
@@ -47,11 +50,12 @@ type: slides
     map1  
     ```
 '''
+
 ---
 
 # Step 3 
 
-— You will need two files in your repository:
+You will need two files in your repository:
 1. `runtime.txt` Specify the R version by date. The easiest day, write today's date (e.g. r-2021-12-07). 
 
     ```
@@ -75,7 +79,9 @@ You can find a template for both files in the next section.
 - Push all your repository changes back to GitHub.
 - Your repository should look now like this:
 
-<img src="https://github.com/throughput-ec/ec-workshops/blob/main/static/module4/12_github.png?raw=true" alt="Binder from Git" width=45% align="center">
+<a href="https://github.com/throughput-ec/ec-workshops/blob/main/static/module4/12_github.png?raw=true" target="_blank">
+<img src="https://github.com/throughput-ec/ec-workshops/blob/main/static/module4/12_github.png?raw=true" alt="R repo" width=45% align="center" title="Click to zoom in"> 
+</a>
 
 ---
 
@@ -87,14 +93,18 @@ You can find a template for both files in the next section.
 https://github.com/your-username/my-first-R-binder
 ```
 
-- Where it says Git ref type in main or the branch that you woud like to use.
+- Where it says Git ref type in `main` or the branch that you woud like to use.
 - Where it says "URL to open (optional)", choose URL and type `rstudio`
 - As you type, the webpage generates a link in the "Copy the URL below..." box. It should look like this:
 ```
 https://mybinder.org/v2/gh/your-username/my-first-R-binder/main?urlpath=rstudio
 ```
 
-<img src="https://github.com/throughput-ec/ec-workshops/blob/main/static/module4/13_binder.png?raw=true" alt="Binder from Git" width=45% align="center">
+---
+
+<a href="https://github.com/throughput-ec/ec-workshops/blob/main/static/module4/13_binder.png?raw=true" target="_blank">
+<img src="https://github.com/throughput-ec/ec-workshops/blob/main/static/module4/13_binder.png?raw=true" alt="Binder Page" width=65% align="center" title="Click to zoom in"> 
+</a>
 
 ---
 
@@ -104,7 +114,9 @@ https://mybinder.org/v2/gh/your-username/my-first-R-binder/main?urlpath=rstudio
 - My Binder will create your binder repo in a few minutes.
 - Be patient. The first time it might take some while to build.
 
-<img src="https://github.com/throughput-ec/ec-workshops/blob/main/static/module4/14_binder.png?raw=true" alt="Binder from Git" width=45% align="center">
+<a href="https://github.com/throughput-ec/ec-workshops/blob/main/static/module4/14_binder.png?raw=true" target="_blank">
+<img src="https://github.com/throughput-ec/ec-workshops/blob/main/static/module4/14_binder.png?raw=true" alt="Binder loading" width=45% align="center" title="Click to zoom in"> 
+</a>
 
 ---
 
@@ -114,18 +126,22 @@ https://mybinder.org/v2/gh/your-username/my-first-R-binder/main?urlpath=rstudio
 
 - You will see a "spinner" as Binder launches the repository.
 
-<img src="https://github.com/throughput-ec/ec-workshops/blob/main/static/module4/08_binder.png?raw=true" alt="Binder from Git" width=45% align="center">
+<a href="https://github.com/throughput-ec/ec-workshops/blob/main/static/module4/08_binder.png?raw=true" target="_blank">
+<img src="https://github.com/throughput-ec/ec-workshops/blob/main/static/module4/08_binder.png?raw=true" alt="Binder Spinner" width=45% align="center" title="Click to zoom in"> 
+</a>
 
 
 ---
 
 # Step 7
 
+- RStudio will open in your browser.
 - You will have to open your `.Rmd` file manually by clicking on it.
     - You can find it on the bottom right panel.
 
-
-<img src="https://github.com/throughput-ec/ec-workshops/blob/main/static/module4/15_binder.png?raw=true" alt="Binder from Git" width=45% align="center">
+<a href="https://github.com/throughput-ec/ec-workshops/blob/main/static/module4/15_binder.png?raw=true" target="_blank">
+<img src="https://github.com/throughput-ec/ec-workshops/blob/main/static/module4/15_binder.png?raw=true" alt="Binder from Git" width=45% align="center" title="Click to zoom in"> 
+</a>
 
 ---
 
@@ -135,7 +151,11 @@ https://mybinder.org/v2/gh/your-username/my-first-R-binder/main?urlpath=rstudio
 
 - Save your LaunchBinder Badge and share it!
 
-<img src="https://github.com/throughput-ec/ec-workshops/blob/main/static/module4/16_binder.png?raw=true" alt="Binder from Git" width=45% align="center">
+[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/sedv8808/my-first-R-binder/main?urlpath=Rstudio)
+
+<a href="https://github.com/throughput-ec/ec-workshops/blob/main/static/module4/16_binder.png?raw=true" target="_blank">
+<img src="https://github.com/throughput-ec/ec-workshops/blob/main/static/module4/16_binder.png?raw=true" alt="Binder from Git" width=45% align="center" title="Click to zoom in"> 
+</a>
 
 ---
 
