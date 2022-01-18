@@ -133,7 +133,7 @@ docker run --rm -p 8787:8787 rocker/geospatial
 
 - When launching a container, add the `-v` flag along with the path to your project’s root directory and the path to the container: 
 ```
-docker run --rm -p 8787:8787 -v /Users/your_user/Documents/r_docker_tutorial:/home/rstudio/r-docker-tutorial rocker/geospatial
+docker run --rm -p 8787:8787 -v /Users/your_user/Documents/r_docker_tutorial:/home/rstudio/r_docker_tutorial rocker/geospatial
 ```
 
 - Go then to `http://localhost:8787/` in your browser.

@@ -146,7 +146,7 @@ Nice try! But unfortunately, it won't be saved - not even in a default location.
 
 </exercise>
 
-<exercise id="5" title="The DockerHub" type="slides">
+<exercise id="5" title="The Docker Hub" type="slides">
 
 <slides source="chapter6_03_pushing_pulling_dockerhub">
 
@@ -154,7 +154,34 @@ Nice try! But unfortunately, it won't be saved - not even in a default location.
 
 </exercise>
 
-<exercise id="6" title="Dockerfiles" type="slides">
+<exercise id="6" title="Trivia Time!">
+
+What is the Docker Hub?
+
+<choice id="1">
+<opt text="It is a for-profit company offering a cloud-based Git repository that helps developers store, manage, track and control changes to their code">
+
+Try again! That looks more to what GitHub is.
+
+</opt>
+
+<opt text="It is the same as Git Hub.>
+
+Nice try! However, GitHub is mainly though for code management, and Docker Hub is thought for container build, management and distribution.
+
+</opt>
+
+<opt text="It is a service provided by Docker for finding and sharing container images with your team." correct="true">
+
+Good job!
+
+
+</opt>
+</choice>
+
+</exercise>
+
+<exercise id="7" title="Dockerfiles" type="slides">
 
 <slides source="chapter6_04_Dockerfiles">
 
@@ -162,7 +189,39 @@ Nice try! But unfortunately, it won't be saved - not even in a default location.
 
 </exercise>
 
-<exercise id="7" title="Summary and Conclusions" type="slides">
+<exercise id="8" title="Template of a Dockerfile">
+
+Use this template as your `Dockerfile` file.  
+You can place it in the `root` directory of your project or Git repository.
+
+This will help you create the environment needed to run your program. 
+
+Remember, this is just a template of some steps that you may want in your Dockerfile.  
+You do not need to have all of them - it depends on what your usecase is.
+
+```
+# image where you are basing yourself from
+FROM rocker/verse:latest  
+
+# libraries that you want to have in your image
+RUN R -e "install.packages('htmlwidgets')"   
+RUN R -e "install.packages('leaflet')"
+
+# creating the directory where your app will live
+RUN mkdir /home/my_docker  
+
+# setting the working directory 
+WORKDIR /home/my_docker    
+
+# copying scripts that you might want in your image
+COPY my_analysis.R /home/my_docker/my_analysis.R     
+
+# running the scripts
+CMD R -e "source('/home/my_docker/my_analysis.R')"  
+```
+</exercise>
+
+<exercise id="9" title="Summary and Conclusions" type="slides">
 
 <slides source="chapter6_05_summary_and_conclusions">
 </slides>

@@ -2,7 +2,7 @@
 type: slides
 ---
 
-<div><h1><img src="https://github.com/throughput-ec/ec-workshops/blob/main/static/module1/00_ec_slide1.png?raw=true" alt="EC Theme" width=25% align="left"/> Lesson 3<br>The DockerHub</h1></div>
+<div><h1><img src="https://github.com/throughput-ec/ec-workshops/blob/main/static/module1/00_ec_slide1.png?raw=true" alt="EC Theme" width=25% align="left"/> Lesson 3<br>The Docker Hub</h1></div>
 
 ---
 ## What is the Docker Hub?
@@ -10,11 +10,11 @@ type: slides
 - Docker Hub is the place where open Docker images are stored. 
 - When we ran our first image by typing
 ```
-docker run --rm -p 8787:8787 rocker/verse
+docker run --rm -p 8787:8787 rocker/geospatial
 ```
 Docker checked if this image is available on your computer.
 
-- If not, the image is downloaded "automatically" from Docker Hub. 
+- If not, the image is downloaded "automatically" from the Docker Hub. 
 
 - If you just want to pull the image but not run it, you can also do
 ```
@@ -24,14 +24,20 @@ docker pull rocker/verse
 ---
 
 ## Pushing an image to Docker Hub
-If you made your own Docker image, you can share it in https://hub.docker.com/. 
+What happens if you want to design your own image so that others can use it?
+
+With the Docker Hub, you can easily share your image in https://hub.docker.com/.  
 After verifying your email you are ready to go and upload your first docker image.
 
-## Setting an account
+Let's get started!
+
+---
+
+## Setting an account in Docker Hub
 
 1. Create an account and log in on https://hub.docker.com/
 2. Click on Create Repository.
-3. Choose a name and a description for your repository and click Create.
+3. Choose a name and a description for your repository and click on `Create`.
 4. Now, log into the Docker Hub from the command line
 ```
 docker login --username=yourhubusername --email=youremail@company.com
