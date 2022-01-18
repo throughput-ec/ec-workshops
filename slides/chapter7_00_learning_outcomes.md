@@ -15,6 +15,13 @@ By the end of this module, you should be able to:
 <img src="https://res.cloudinary.com/practicaldev/image/fetch/s--up7-nOgB--/c_imagga_scale,f_auto,fl_progressive,h_420,q_auto,w_1000/https://dev-to-uploads.s3.amazonaws.com/i/mfnwwxkfx46xzrlndw12.png" alt="Motivation Docker" width=50% align="center">
 
 
+
+Explain who owns the copyright of code they write in a give situation, and why
+
+Choose an appropriate license for software (i.e., packages or analysis code)
+
+Choose an appropriate license for your non-software materials
+
 ---
 
 # Let's Get Started!

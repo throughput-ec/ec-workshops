@@ -44,37 +44,23 @@ id: 7
 
 </exercise>
 
-<exercise id="5" title="Code reviews" type="slides">
+<exercise id="5" title="Introduction to Continuous Integration (CI) and Github Actions" type="slides">
 
-<slides source="chapter7_05_code_review">
+<slides source="chapter7_05_github_actions">
 </slides>
 
 </exercise>
 
-<exercise id="6" title="Introduction to Continuous Integration (CI)" type="slides">
+<exercise id="6" title="Software Licensing" type="slides">
 
-<slides source="chapter7_06_ci">
+<slides source="chapter7_06_software_licensing">
 </slides>
 
 </exercise>
 
-<exercise id="7" title="Introduction to Github Actions" type="slides">
+<exercise id="7" title="What We Learned" type="slides">
 
-<slides source="chapter7_07_github_actions">
-</slides>
-
-</exercise>
-
-<exercise id="8" title="Software Licensing" type="slides">
-
-<slides source="chapter7_08_software_licensing">
-</slides>
-
-</exercise>
-
-<exercise id="9" title="What We Learned" type="slides">
-
-<slides source="chapter7_09_what_we_learned">
+<slides source="chapter7_07_what_we_learned">
 </slides>
 
 </exercise>
