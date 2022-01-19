@@ -23,43 +23,14 @@ id: 5
 
 </exercise>
 
-<exercise id="2" title="First Steps">
-
-Type the R code below and try running it.
-
-<codeblock id="05_01">
-
-1. Assign to `x` the value of 5.
-2. Print `x`
-
-Use `<-` to a assign a value to a variable.
-Use `print` to print the variable.
-
-</codeblock>
-
-
-Rewrite the following code and see what happens.
-
-```
-boxplot(mtcars$mpg, grouping(mtcars$cyl))
-```
-<codeblock id="05_02">
-
-Now, go to the RStudio Binder and run the above code in the Console panel.
-What happened there? Annotate your observations!
-
-</codeblock>
-
-</exercise>
-
-<exercise id="3" title="Creating an Rmd file" type="slides">
+<exercise id="2" title="Creating an Rmd file" type="slides">
 
 <slides source="chapter5_02_creating_an_Rmd_file">
 </slides>
 
 </exercise>
 
-<exercise id="4" title="Creating a Presentation" type="slides">
+<exercise id="3" title="Creating a Presentation" type="slides">
 
 <slides source="chapter5_03_creating_a_presentation">
 
@@ -67,7 +38,7 @@ What happened there? Annotate your observations!
 
 </exercise>
 
-<exercise id="5" title="My First Presentation Task">
+<exercise id="4" title="My First Presentation Task">
 
 1. Go to [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/throughput-ec/ec-binder/main?urlpath=rstudio)
 
@@ -116,10 +87,39 @@ y <- 10
 
 </exercise>
 
-<exercise id="6" title="Creating an R Project" type="slides">
+<exercise id="5" title="Creating an R Project" type="slides">
 
 <slides source="chapter5_04_R_project">
 </slides>
+
+</exercise>
+
+<exercise id="6" title="First Steps in R">
+
+Type the R code below and try running it.
+
+<codeblock id="05_01">
+
+1. Assign to `x` the value of 5.
+2. Print `x`
+
+Use `<-` to a assign a value to a variable.
+Use `print` to print the variable.
+
+</codeblock>
+
+
+Rewrite the following code and see what happens.
+
+```
+boxplot(mtcars$mpg, grouping(mtcars$cyl))
+```
+<codeblock id="05_02">
+
+Now, go to the RStudio Binder and run the above code in the Console panel.
+What happened there? Annotate your observations!
+
+</codeblock>
 
 </exercise>
 
