@@ -123,10 +123,16 @@ y <- 10
 
 </exercise>
 
+<exercise id="7" title="Popular Data Wrangling Libraries Exercises with RStudio">
 
-<exercise id="7" title="Summary and Conclusions" type="slides">
+Go to <a href="https://mybinder.org/v2/gh/sedv8808/R_Wrangling/main?urlpath=rstudio" target="_blank"> Binder </a> and complete the exercises.
+
+
+</exercise>
+<exercise id="8" title="Summary and Conclusions" type="slides">
 
 <slides source="chapter5_05_summary_and_conclusions">
 </slides>
 
 </exercise>
+
