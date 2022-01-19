@@ -153,14 +153,14 @@ cor( c( 1 , 1 ), c( 2 , 3 ) )
 
 ## Example YAML Header**
 
-```
----
-title: "Finding coordinates in a map"
-author: "My Name"
-date: "December 07, 2021"
-output: html
----
-```
+~~~
+ ---
+ title: "Finding coordinates in a map"
+ author: "My Name"
+ date: "December 07, 2021"
+ output: html
+ ---
+~~~
 
 ---
 
