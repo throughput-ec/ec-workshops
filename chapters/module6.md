@@ -154,34 +154,7 @@ Nice try! But unfortunately, it won't be saved - not even in a default location.
 
 </exercise>
 
-<exercise id="6" title="Trivia Time!">
-
-What is the Docker Hub?
-
-<choice id="1">
-<opt text="It is a for-profit company offering a cloud-based Git repository that helps developers store, manage, track and control changes to their code">
-
-Try again! That looks more to what GitHub is.
-
-</opt>
-
-<opt text="It is the same as Git Hub.>
-
-Nice try! However, GitHub is mainly though for code management, and Docker Hub is thought for container build, management and distribution.
-
-</opt>
-
-<opt text="It is a service provided by Docker for finding and sharing container images with your team." correct="true">
-
-Good job!
-
-
-</opt>
-</choice>
-
-</exercise>
-
-<exercise id="7" title="Dockerfiles" type="slides">
+<exercise id="6" title="Dockerfiles" type="slides">
 
 <slides source="chapter6_04_Dockerfiles">
 
@@ -189,7 +162,7 @@ Good job!
 
 </exercise>
 
-<exercise id="8" title="Template of a Dockerfile">
+<exercise id="7" title="Template of a Dockerfile">
 
 Use this template as your `Dockerfile` file.  
 You can place it in the `root` directory of your project or Git repository.
@@ -221,7 +194,7 @@ CMD R -e "source('/home/my_docker/my_analysis.R')"
 ```
 </exercise>
 
-<exercise id="9" title="Summary and Conclusions" type="slides">
+<exercise id="8" title="Summary and Conclusions" type="slides">
 
 <slides source="chapter6_05_summary_and_conclusions">
 </slides>
