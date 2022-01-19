@@ -6,21 +6,33 @@ type: slides
 
 ---
 
+
 By the end of this module, you should be able to:
 
-- Understand what Docker is
-- Use Docker Images from the DockerHub
-- Create your own Docker Images
+- Define data science, and the related terms reproducibile and audible analysis
+- Give examples of workflows that are considered reproducible and trustworthy in the context of a data analysis
+- Describe the data analysis cycle
+- Explain how to mechanistically start a data analysis project
+- State and refine a data analysis question
 
-<img src="https://res.cloudinary.com/practicaldev/image/fetch/s--up7-nOgB--/c_imagga_scale,f_auto,fl_progressive,h_420,q_auto,w_1000/https://dev-to-uploads.s3.amazonaws.com/i/mfnwwxkfx46xzrlndw12.png" alt="Motivation Docker" width=50% align="center">
+---
 
 
+- Define the following 3 types of testing
+    - unit testing
+    - integration testing
+    - regression testing
+- Define continuous integration testing
+- Explain why continuous integration testing is superior to manually running tests
+- Define the following key concepts that underlie GitHub Actions: Actions, Workflow, Event, Runner, Job, Step
 
-Explain who owns the copyright of code they write in a give situation, and why
+---
 
-Choose an appropriate license for software (i.e., packages or analysis code)
 
-Choose an appropriate license for your non-software materials
+- Store and use GitHub Actions credentials safely via GitHub Secrets
+- Explain who owns the copyright of code they write in a give situation, and why
+- Choose an appropriate license for software (i.e., packages or analysis code)
+- Choose an appropriate license for your non-software materials
 
 ---
 

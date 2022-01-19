@@ -43,7 +43,7 @@ id: 7
 
 </exercise>
 
-<exercise id="5" title="Introduction to Continuous Integration (CI) and Github Actions" type="slides">
+<exercise id="5" title="Introduction to CI/CD and Github Actions" type="slides">
 
 <slides source="chapter7_05_github_actions">
 </slides>
