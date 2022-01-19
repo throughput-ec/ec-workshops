@@ -78,17 +78,17 @@ Licenses are legal documents and written by legal experts. But you can choose an
 
 ## Choosing a License
 
-In practice, a few licenses are by far the most popular, and choosealicense.com will help you find a common license that suits your needs. 
+In practice, a few [licenses](https://choosealicense.com/licenses/) are by far the most popular, and [choosealicense.com](https://choosealicense.com/) will help you find a common license that suits your needs. 
 
-Open source software is used in business¶
-RStudio Customer Stories
+- [Very Simple and Permisive](https://choosealicense.com/licenses/mit/)
 
-The Unreasonable Fear of Infection
+- [Existing projects and communities](https://choosealicense.com/community/)
 
-An Ethical License for Open Source Projects¶
-The Hippocratic License
+- [Sharing Improvements](https://choosealicense.com/licenses/gpl-3.0/)
 
-For visualizations, reports, presentations, or tutorials, use The Creative Commons licences.
+
+For visualizations, reports, presentations, or tutorials, use [The Creative Commons licences](https://creativecommons.org/licenses/).
+
 They are now widely used in academia and the publishing industry.
 
 ---
