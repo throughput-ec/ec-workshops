@@ -1,8 +1,7 @@
 ---
 title: 'Module 7: Development best-practices including FAIR data principles'
 description:
-  'This module will teach you about many cool things and introduce you to the
-  most important concepts of the course.'
+  'This module will teach you different aspects in regards to Data Workflows, handling filenames and best practices such as testing, continuous integration and licensing.'
 prev: /module6
 next: null
 type: chapter
@@ -30,7 +29,7 @@ id: 7
 
 </exercise>
 
-<exercise id="3" title="Science Workflows" type="slides">
+<exercise id="3" title="Data Science Workflows" type="slides">
 
 <slides source="chapter7_03_ds_workflows">
 </slides>
