@@ -96,6 +96,8 @@ y <- 10
 
 <exercise id="6" title="First Steps in R">
 
+
+
 Type the R code below and try running it.
 
 <codeblock id="05_01">
