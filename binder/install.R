@@ -1,2 +1,5 @@
 install.packages("tidyverse")
 install.packages("rjson")
+install.packages("leaflet")
+install.packages("devtools")
+install.packages("neotoma")
