@@ -96,32 +96,125 @@ y <- 10
 
 <exercise id="6" title="First Steps in R">
 
+For a simple introduction, we are going to use the Gapminder dataset.
 
+We will apply our knowledge of tidyverse functions. 
 
-Type the R code below and try running it.
+## About the Dataset
+
+[Gapminder Foundation](https://www.gapminder.org/) is a non-profit organization in Stockholm, Sweden, that promotes sustainable global development and achievement of the United Nations Millennium Development Goals by increased use and understanding of statistics and other information about social, economic and environmental development at local, national and global levels.
+
+## Let's learn some functions in R!
+
+**glimpse()**  
+The `gapminder` dataframe has been previously loaded for you. You just need to call it.
+Let’s take a quick look at it to learn about its structure. 
+
+We can do this using the `glimpse()` command, which will display the structure and the first few rows of our data frame.
 
 <codeblock id="05_01">
 
-1. Assign to `x` the value of 5.
-2. Print `x`
-
-Use `<-` to a assign a value to a variable.
-Use `print` to print the variable.
 
 </codeblock>
 
 
-Rewrite the following code and see what happens.
+**select**  
+The first function we’ll be using is `select()`. 
+This function let’s us pick columns from our dataframe, based on name (e.g. year) or index (e.g. 3).
 
-```
-boxplot(mtcars$mpg, grouping(mtcars$cyl))
-```
 <codeblock id="05_02">
 
-Now, go to the RStudio Binder and run the above code in the Console panel.
-What happened there? Annotate your observations!
+</codeblock>
+
+Observe that the new dataframe contains only a subset of the columns from the original dataframe. 
+
+
+**head()**  
+As we saw from our `glimpse()` observations, the `gapminder` dataframe has 1,704 rows...
+
+What if we would like to see some of the first few rows, just to have an idea of what the dataframe looks like? We can do that with `head()`.
+
+<codeblock id="05_03">
 
 </codeblock>
+
+**Pipe: %>%**  
+
+The pipe symbol `%>%` “pipes” an object INTO a function. We could `pipe` for example, the gapminder data into the `select()` function
+
+We could rewrite code the following way:
+
+<codeblock id="05_04">
+
+</codeblock>
+
+
+## Challenge 1
+
+Reorder the code below to create a code that uses `select()` and `%>%`  to choose the columns continent, GDP per capita, life expectancy, and year from the gapminder data. 
+
+Save it to a new variable named `result`.
+Display the results using `glimpse()`.
+
+<codeblock id="05_05">
+
+</codeblock>
+
+
+**filter()**  
+Now that we can select columns, how do we choose rows? `filter()` allows us to choose rows from our dataframe using logical criteria. 
+
+For example, using the `gapminder` dataframe, we could filter rows in which country is "USA". 
+
+This can also be applied to numerical values, such as the year being equal to 1977, or life expectancy greater than 80.
+
+**REMEMBER** In R, an equality is done using a double equals sign `==`.
+
+<codeblock id="05_06">
+
+</codeblock>
+
+We can also filter several arguments at a time.
+
+Let's try it!
+
+<codeblock id="05_07">
+
+</codeblock>
+
+
+## Challenge 2
+
+Use `filter()` to choose data for all Asian countries, from the year 1975 onwards.
+
+Assign them to a variable called `gapminder_asia`
+
+
+<codeblock id="05_08">
+
+`>=` is used for the greater than or equal to symbol.
+
+</codeblock>
+
+
+**mutate()**  
+Now that we can filter rows and columns, let's say we would like to start making some summaries of our data.
+Let’s say we now want to calculate the total GDP, which is done by mutiplying the GDP per capita by the population. 
+`mutate()` will perform this calculation on each row in the data frame, one row at a time (row-wise).
+
+<codeblock id="05_09">
+
+</codeblock>
+
+**Combining Functions**  
+Pipes `%>%` can be used to send an object such as a data frame into a function, such as select(), or filter(). 
+
+However, their real power is that they can also be used to send the output of one function into another function. This allows us to chain together multiple commmands, without the need for intermediate variables.
+
+<codeblock id="05_10">
+
+</codeblock>
+
 
 </exercise>
 

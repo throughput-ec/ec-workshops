@@ -1,3 +1,6 @@
+# Load libraries
+library(gapminder)
+suppressMessages(library(dplyr))
 
-x <- 5
-print(x)
+# Use glimpse to do an overview of gapminder
+glimpse(gapminder)
