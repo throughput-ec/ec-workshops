@@ -404,7 +404,7 @@ Let's plot only the first 20 rows.
 You might want to learn more about `leaflet`
 
 Take the time to check out their [documentation](https://rstudio.github.io/leaflet/)
-This is a recommended [tutorial] for Paleosciences (https://poldham.github.io/abs/mapgbif.html)
+This is a recommended [tutorial](https://poldham.github.io/abs/mapgbif.html) for Paleosciences 
 
 </exercise>
 
@@ -441,7 +441,7 @@ Let’s say we’re looking for all records from Wisconsin with Larix pollen, th
 
 </codeblock>
 
-You have all the advantages of the Stratiplot() function now, and the wrapper for the neotoma package makes it more useful directly with download objects.
+You have all the advantages of the `Stratiplot()` function now, and the wrapper for the neotoma package makes it more useful directly with download objects.
 
 </exercise>
 
