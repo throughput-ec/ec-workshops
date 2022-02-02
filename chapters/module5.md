@@ -215,18 +215,145 @@ However, their real power is that they can also be used to send the output of on
 
 </codeblock>
 
+**Calculations with `group_by()` and `summarise()`**  
+These functions allow us to work on our data in specific groups. 
+For example, we can use `group_by()` to group observations by country, then calculate the `maximum`, `minimum`, and `average` life expectancy for each country.
 
-</exercise>
+<codeblock id="05_11">
 
-<exercise id="7" title="Popular Data Wrangling Libraries Exercises with RStudio">
+</codeblock>
+
+## Challenge 3
+
+Calculate the mean `mean()` and standard deviation `sd()` of the total GDP for all counties in the Americas from 2000 and onwards.
+
+<codeblock id="05_12">
+
+Remember to use the `%>%` operator.
+`filter()` can help you select which rows interest you
+`mutate()` can help you create new columns with mathematican operations that you need
+`group_by()` helps you specify groups within your data and along with `summarise()` you 
+can calculate several statistics.
+</codeblock>
+
+## Well done!
+
+You finished learning how to use the most popular functions in the `tidyverse` package.
+
+We are still going to use some of these functions to organize our datasets. Let's move to plotting the data.
+
+
+To practice more even more:
 
 Go to <a href="https://mybinder.org/v2/gh/sedv8808/R_Wrangling/main?urlpath=rstudio" target="_blank"> Binder </a> and complete the exercises.
 
+</exercise>
+
+<exercise id="7" title="Plotting Data">
+
+In the previous section, we did some exercises using the `Gapminder` Dataset.
+
+As you could see, although tables are useful, they can be hard to understand. Here is where plotting can come in handy.
+
+Plotting our data is one of the best ways to quickly explore it and the various relationships between variables.
+
+There are three main plotting systems in R:
+- The base plotting system
+- The `lattice` package
+- The `ggplot2` package
+
+We’ll be learning about the `ggplot2` package, because it is the most effective for creating publication quality graphics. 
+`ggplot2` is built on the grammar of graphics. A plot can be expressed from the same set of components: 
+- A dataset
+- A coordinate system
+- A set of geoms (the visual representation of data points)
+
+The key to understanding `ggplot2` is thinking about a figure in layers. 
+This idea may be familiar to you if you have used image editing programs like Photoshop, Illustrator, or Inkscape.
+
+## Simple ggplot
+
+Run the following code, we are going to use the `Gapminder` dataset to visualize the relationship between `gdpPercap` and `lifeExp`
+<codeblock id="05_13">
+
+</codeblock>
+
+Notice that the first command we call is `ggplot()`. `ggplot()` allows R know that we want to create a new plot. The `arguments` that we give the `ggplot()` function are the global options for the plot: they apply to all layers on the plot.
+
+We passed in two arguments to `ggplot()`
+- `gapminder` or the data that we want to show on our figure
+- `aes()` that tells which columns from the data we want to use. On the `x-axis` we are passing the `gdpPercap` column and on the y-axis the `lifeExp` column.
+
+By itself, `ggplot()` only has the perameters of what to draw, but does not know how to draw the data.
+
+For that, we need to indicate the data representation using the `geom_()` layers. In our example, we used `geom_point()` to visually represent the relationship between x and y as a scatterplot of points
+
+<codeblock id="05_13">
+
+</codeblock>
+
+**Layers**  
+Using a scatterplot `geom_point()` probably isn’t the best for visualizing change over time. We can choose `geom_line()` to visualize the data as a line plot. 
+Here we’ll also shorten our code by omitting some of the declarations (e.g. x = year). By default, the first object passed to ggplot() is assumed to be the data argument. Similarly, the first two column names of aes() are assumed to be the x and y arguments.
+
+## Challenge 1
+Another aesthetic property we can change in `aes()` is the `colour`.
+
+Using your previous chapter, group the data by continent and year. 
+
+Then, plot using `ggplot()` and a `geom_line()` - `year` should be on your x-axis and `mean(lifeexp)` on your y-axis. Colour by `continent` column.
+
+What trends do you see in the data? Are they what you expected?
+
+<codeblock id="05_14">
+
+</codeblock>
+
+**Transformations and Statistics**  
+`ggplot2` makes it easy to overlay statistical models over the data. 
+For example:
+
+<codeblock id="05_15">
+
+</codeblock>
+
+Currently it is hard to see the relationship between the points due to some strong outliers in GDP per capita. 
+We can change the scale of units on the x-axis using the `scale()` functions. These control the mapping between the data values and visual values of an aesthetic. 
+We can also modify the transparency of the points, using the `alpha` function, which is especially helpful when you have a large amount of data which is very clustered.
+
+<codeblock id="05_16">
+
+</codeblock>
+
+The `log10` function applied a transformation to the values of the gdpPercap column before rendering them on the plot, so that each multiple of 10 now only corresponds to an increase in 1 on the transformed scale, e.g. a GDP per capita of 1,000 is now 3 on the y axis, a value of 10,000 corresponds to 4 on the y axis and so on. This makes it easier to visualize the spread of data on the x-axis.
+
+**Fitting a relationship**  
+We can fit a simple relationship to the data by adding another layer, `geom_smooth()`:
+
+<codeblock id="05_17">
+
+</codeblock>
+
+**Multi-panel figures**  
+Earlier we visualized the change in life expectancy over time across all countries in one plot. Alternatively, we can split this out over multiple panels by adding a layer of facet panels. Here we will first make a smaller version of the data to make it easier to work with. The %in% operator just means that country must be equal to one of the four specified countries.
+
+<codeblock id="05_18">
+
+</codeblock>
 
 </exercise>
-<exercise id="8" title="Summary and Conclusions" type="slides">
+
+<exercise id="8" title="Plotting Geographical Data">
+
+
+
+
+</exercise>
+
+<exercise id="9" title="Summary and Conclusions" type="slides">
 
 <slides source="chapter5_05_summary_and_conclusions">
+
 </slides>
 
 </exercise>
