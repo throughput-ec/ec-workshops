@@ -466,21 +466,7 @@ Let’s say we’re looking for all records from Wisconsin with Larix pollen, th
 
 </codeblock>
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+You have all the advantages of the Stratiplot() function now, and the wrapper for the neotoma package makes it more useful directly with download objects.
 
 </exercise>
 
