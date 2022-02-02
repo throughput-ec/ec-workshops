@@ -345,6 +345,59 @@ Earlier we visualized the change in life expectancy over time across all countri
 
 <exercise id="8" title="Plotting Geographical Data">
 
+We are going to work again on our `Gapminder` dataset.
+
+We are only going to be interested in the datapoints of the year 2007 and need to filter them using the `filter()` function.
+
+**GOAL:**  
+
+Have you seen the `Gapminder`'s frontpage plot? If not, take a look at it in this [link](https://www.gapminder.org/tools/#$chart-type=bubbles&url=v1)
+
+Our goal will be to replicate this plot. Let's divide our task in three parts.
+
+- First, replicate the gapminder scatterplot as close as we can. 
+- Second, create a world map that visualizes the world continents in the same colors as the points in the scatterplot. 
+- Third, combine both visualizations to one visualization and add a title and subtitle to the visualization.
+
+**Cleaning the Data**  
+The visualization does not differ between the continent Oceania and Asia, however the `gapminder` dataset does make a difference. Hence, we need to subsume Oceania under Asia. To do that, we will use the function `case_when`, which allows us to create new variables on specific conditions. 
+
+Since the default colours of the continents will not match the gapminder colours, we need to define the levels of the continents as a `factor` so that we can apply the right colors to the right continents. 
+
+`as.factor` converts a variable into a factor, but preserves variable and value label attributes.
+
+<codeblock id="05_19">
+
+</codeblock>
+
+**The first scatterplot**  
+<codeblock id="05_20">
+
+</codeblock>
+
+**Adjusting the scatterplot**  
+The scatterplot is far from perfect yet. We need to improve the size of the pointsand change the background of the visualization from grey to white. We also need to get rid of the legend:
+
+<codeblock id="05_21">
+
+</codeblock>
+
+**Get the data for the world map**  
+Now that we have finished the scatterplot, let's create the visualization of the continents. 
+Our goal is to create a world map in which the colors of the continents match the colors of the points in the scatterplot.
+
+We will use the `geom_map` geom. `geom_map` takes a map argument, which is a dataframe that specifies the `longitude` and `latitude` of different regions of the world.
+
+In order to do that, we take the `map_data` function, which allows use to create a dataframe with the longitude and latitude of every country of the world. 
+
+The major problem we need to solve is how to add the name of the `continent` to the dataframe. There is no continent variable in the dataframe provided by `map_data("world")`. 
+However, the package `countrycode` has a function countrycode, which enables us to extract the continent from each country name.
+
+`countrycode` differentiates between Oceania and Asia. If you look at the original gapminder visualization you will see that they do not make this difference. That's why we also placed Oceania under Asia using the case_when function. Lastly, we need to relevel the factor continent to match it to the order of the colors we will assign to the continents in the next step.
+
+<codeblock id="05_22">
+
+</codeblock>
 
 
 
