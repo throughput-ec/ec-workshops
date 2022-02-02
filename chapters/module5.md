@@ -399,17 +399,92 @@ However, the package `countrycode` has a function countrycode, which enables us 
 
 </codeblock>
 
+Let's plot the world
+
+<codeblock id="05_23">
+
+</codeblock>
+
+**Adding the continent map to the scatterplot**
+
+To add the continent map to the scatterplot we use the annotation_custom function. 
+
+We need to wrap the continent map around the `ggplotGrob` function otherwise `annotation_custom` will throw an error. 
+We then need to add the xmin, xmax, ymin, and ymax values to indicate where in our visualization the continent visualization should be placed. Since we used a logarithmic scale in our scatterplot I used the `log10` function to convert the x values to a logarithmic scale. 
+
+<codeblock id="05_24">
+
+</codeblock>
 
 
 </exercise>
 
-<exercise id="9" title="Paleoecological Analysis with Neotoma">
+<exercise id="9" title="Using leaflet package">
+
+**TASK:** Find UBC in a Leaflet map.
+
+
+<codeblock id="05_25">
+
+</codeblock>
+
+You might want to learn more about `leaflet`
+This is a recommended [tutorial](https://poldham.github.io/abs/mapgbif.html)
+
+</exercise>
+
+<exercise id="10" title="Paleoecological Analysis with Neotoma">
 
 **Warning** neotoma2 will be released soon and this code will be updated with its new code.
 
+Taken from:
+[Advanced Neotoma for Fun and Profit](http://www.goring.org/resources/neotoma_lab_meeting.html#)
+by [Simon Goring](http://www.goring.org/)
+
+**What we’ll learn**
+This tutorial is intended to act as a more complete vignette of the neotoma package’s functionality. 
+
+**Data Exploration Made Easy**
+It’s a bit of a pain to download lots of records and then visualize them in R, or at least, it had been. In building the package I wanted to try to limit the need to install lots of other packages, so the basic plot() method isn’t all that helpful.
+
+<codeblock id="05_30">
+
+</codeblock>
+
+All Neotoma data points in Wisconsin, with symbols identifying dataset type.
+
+So, we can see the different dataset types. You can pretty much make out Wisconsin, but it doesn’t look that great, and it’s certainly not publication quality. We can make a better map, an interactive map, using leaflet. 
+
+<codeblock id="05_31">
+
+</codeblock>
+
+**2.1 Plotting stratigraphic diagrams**  
+Let’s say we’re looking for all records from Wisconsin with Larix pollen, that must have some samples within the middle Holocene:
+
+<codeblock id="05_32">
+
+</codeblock>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 </exercise>
 
-<exercise id="10" title="Summary and Conclusions" type="slides">
+<exercise id="11" title="Summary and Conclusions" type="slides">
 
 <slides source="chapter5_05_summary_and_conclusions">
 
