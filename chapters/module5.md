@@ -385,13 +385,19 @@ You create a `Leaflet` map with these basic steps:
 
 Here’s a basic example:
 
-<codeblock id="05_24">
+*Find a point with coordinates (long = -123.241999032 , lat = 49.267665596) on a Leaflet map.*
+
+<codeblock id="05_25">
 
 </codeblock>
 
-**TASK:** Find a point with coordinates (long = -123.241999032 , lat = 49.267665596) on a Leaflet map.
+Of course, we may want to plot more than a single point. With `leaflet`, we can pass a dataframe that has `latitude` and `longitude` columns to plot all desired points.
 
-<codeblock id="05_25">
+For example, we are going to use the  `quakes` data in `R`.
+
+Let's plot only the first 20 rows.
+
+<codeblock id="05_24">
 
 </codeblock>
 
