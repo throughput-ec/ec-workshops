@@ -11,12 +11,9 @@ world <- map_data("world") %>%
   mutate(
     continent = countrycode(sourcevar = region,
                             origin = "country.name",
-                            destination = "continent"),
-    continent = case_when(
-      continent == "Oceania" ~ "Asia",
-      TRUE ~ as.character(continent)
+                            destination = "continent"
     ) %>% as.factor %>% 
-      fct_relevel("Asia", "Americas", "Europe", "Africa")
+      fct_relevel("Asia", "Americas", "Europe", "Africa", "Oceania")
   ) %>% 
   drop_na(continent)
 
@@ -27,7 +24,7 @@ ggplot(data = world) +
                fill = continent)) +
   theme_map() +
   scale_fill_manual(values = c("#F15772", "#7EEB03",
-                               "#FBE700", "#54D5E9")) +
+                               "#FBE700", "#54D5E9", "#d286e6")) +
   guides(fill = FALSE) +
   theme(
     plot.background = element_rect(color = "#B8C2CC", fill = NA)
