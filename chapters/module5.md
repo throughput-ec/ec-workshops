@@ -421,8 +421,7 @@ We then need to add the xmin, xmax, ymin, and ymax values to indicate where in o
 
 <exercise id="9" title="Using leaflet package">
 
-**TASK:** Find UBC in a Leaflet map.
-
+**TASK:** Find a point with coordinates (long = -123.241999032 , lat = 49.267665596) on a Leaflet map.
 
 <codeblock id="05_25">
 
