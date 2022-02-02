@@ -403,7 +403,13 @@ However, the package `countrycode` has a function countrycode, which enables us 
 
 </exercise>
 
-<exercise id="9" title="Summary and Conclusions" type="slides">
+<exercise id="9" title="Paleoecological Analysis with Neotoma">
+
+**Warning** neotoma2 will be released soon and this code will be updated with its new code.
+
+</exercise>
+
+<exercise id="10" title="Summary and Conclusions" type="slides">
 
 <slides source="chapter5_05_summary_and_conclusions">
 
