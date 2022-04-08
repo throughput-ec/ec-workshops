@@ -12,4 +12,4 @@ install.packages("choroplethr")
 
 install.packages("githubinstall")
 library(githubinstall)
-githubinstall("neotoma2")
+githubinstall("neotomadb/neotoma2")
