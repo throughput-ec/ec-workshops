@@ -19,4 +19,4 @@ USER ${NB_USER}
 
 ## Run an install.R script, if it exists.
 RUN  R -e devtools::install_github("NeotomaDB/neotoma2", ref = "dev")
-RUN if [ -f install.R ]; then R --quiet -f install.R; fi
+#RUN if [ -f install.R ]; then R --quiet -f install.R; fi
